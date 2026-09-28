@@ -1,0 +1,84 @@
+MountMasterLocales = MountMasterLocales or {}
+
+MountMasterLocales.enGB = {
+    Categories = {
+        [1] = "Vendor",
+        [2] = "Achievement",
+        [3] = "Rare",
+        [4] = "Reputation",
+        [5] = "Quest",
+        [6] = "Raid",
+        [7] = "Dungeon",
+        [8] = "PvP",
+        [9] = "Profession",
+        [10] = "Blizzard Store", -- Store, Subscriptions, Twitch Drops, Collector's Edition + Promotions
+        [11] = "Race & Class",
+        [12] = "Mythic+",
+        [13] = "World Event", --Returning Events, Timewalking,Brewfest, Hallow's end, Love is in the Air, Noblegarden etc...
+        [14] = "Limited Time", --Might Not Return, Trading Post, Plunderstorm, Remix
+        [15] = "Unobtainable",
+    },
+
+    Factions = {
+        [1] = "Alliance",
+        [2] = "Horde",
+    },
+
+    Expansions = {
+        [-1] = "Undefined",
+        [0] = "Classic",
+        [1] = "The Burning Crusade",
+        [2] = "Wrath of the Lich King",
+        [3] = "Cataclysm",
+        [4] = "Mists of Pandaria",
+        [5] = "Warlords of Draenor",
+        [6] = "Legion",
+        [7] = "Battle for Azeroth",
+        [8] = "Shadowlands",
+        [9] = "Dragonflight",
+        [10] = "The War Within",
+        [11] = "Midnight",
+        --[12] = "The Last Titan",
+    },
+
+    Subcategories = {
+        [1] = "Brewfest",
+        [2] = "Hallow's End",
+        [3] = "Love is in the Air",
+        [4] = "Noblegarden",
+        [5] = "Winter Veil",
+        [6] = "Lunar Festival",
+        [7] = "Midsummer Fire Festival",
+        [8] = "Brawler's Guild",
+        [9] = "Darkmoon Faire",
+        [10] = "Timewalking",
+        [11] = "Anniversary",
+        [12] = "Trading Post",
+        [13] = "Plunderstorm",
+        [14] = "Remix: Pandaria",
+        [15] = "Remix: Legion",
+        [16] = "Ahead of the Curve",
+        [17] = "Keystone Master",
+        [18] = "Gladiator",
+        [19] = "Vicious",
+        [20] = "Blizzard Store",
+        [21] = "Subscriptions",
+        [22] = "Twitch Drops",
+        [23] = "Collector's Edition",
+        [24] = "Blizzcon",
+        [25] = "Trading Card Game",
+        [26] = "BMAH",
+        [27] = "Game promotions",
+        [28] = "Treasures",
+        [29] = "Human", [30] = "Dwarf", [31] = "Night Elf", [32] = "Gnome", 
+        [33] = "Draenei", [34] = "Worgen", [35] = "Pandaren", [36] = "Dracthyr", 
+        [37] = "Allied Races", 
+        [38] = "Paladin",  [39] = "Demon Hunter", 
+        [40] = "Warlock", [41] = "Death Knight"
+        [42] = "Orc", [43] = "Undead",  [44] = "Tauren", [45] = "Troll", [46] = "Goblin", [47] = "Blood Elf", 
+        [48] = "Alchemy", [49] = "Archaeology",  [50] = "Engineering", [51] = "Fishing", [52] = "Jewelcrafting",
+        [53] = "Tailoring", [54] = "Leatherworking", [55] = "Blacksmith",
+        [56] = "Kurenai/The Mag'har", [57] = "Netherwin", [58] = "Sha'tari Skyguard", [59] = "Argent Tournament", [60] = "Paragon",
+    }
+    
+}

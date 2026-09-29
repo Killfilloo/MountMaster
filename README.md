@@ -1,4 +1,4 @@
-<img width="627" height="627" alt="Logo" src="https://github.com/user-attachments/assets/fa80c824-998b-40c8-89a5-b3c5211f218f" />
+<a href="https://www.curseforge.com/wow/addons/mountmaster/preview"><img width="627" height="627" alt="Logo" src="https://github.com/user-attachments/assets/fa80c824-998b-40c8-89a5-b3c5211f218f" /></a>
 <h1>MountMaster</h1>
 
 MountMaster is a mount collectors best friend.

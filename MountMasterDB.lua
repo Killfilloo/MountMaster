@@ -5670,7 +5670,7 @@ MountMasterDB = {
 {
    ["mountID"] = 791,
     ["name"] = "Felblaze Infernal",
-    ["tips"] = "Felblaze Infernal. \n\n1. Drop: Gul'dan (The Nighthold - Normal / Heroic). \n2. Drop Rate: ~1%.",
+    ["tips"] = "Felblaze Infernal. \n\n1. Drop: Gul'dan (The Nighthold - Any difficulty). \n2. Drop Rate: ~1%.",
     ["author"] = "AI",
     ["difficulty"] = 2,
     ["category"] = 6,
@@ -7011,13 +7011,13 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1013,
-   ["name"] = "Honeyback Harvester",
-   ["tips"] = "Honeyback Harvester. \n\n1. Quest: Honeyback Hive Quest Chain (Stormsong Valley). \n2. Requirement: Raise reputation with Honeyback Hive to Exalted (Alliance-only).",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 11,
-   ["expansion"] = 7,
-   ["faction"] = 1,
+    ["name"] = "Honeyback Harvester",
+    ["tips"] = "Honeyback Harvester. \n\n1. Quest: Honeyback Hive Quest Chain (Stormsong Valley). \n2. Requirement: Raise reputation with Honeyback Hive to Exalted (Alliance-only).",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 5,
+    ["expansion"] = 7,
+    ["faction"] = 1,
 },
 {
    ["mountID"] = 1015,
@@ -8164,13 +8164,13 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1277,
-   ["name"] = "Honeyback Hivemother",
-   ["tips"] = "Honeyback Hivemother. \n\n1. Quest: Honeyback Hive reputation chain (Stormsong Valley). \n2. Requirement: Exalted status with Honeyback Hive (Alliance-only).",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 11,
-   ["expansion"] = 7,
-   ["faction"] = 1,
+    ["name"] = "Honeyback Hivemother",
+    ["tips"] = "Honeyback Hivemother. \n\n1. Achievement: Complete the meta achievement I'm On Island Time. ",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 2,
+    ["expansion"] = 7,
+    ["faction"] = 1,
 },
 {
    ["mountID"] = 1282,
@@ -14038,9 +14038,6 @@ MountMasterDB = {
     ["subcategory"] = 18,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
-
-
-
 },
 {
    ["mountID"] = 2327,

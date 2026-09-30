@@ -260,7 +260,7 @@ function MM:UpdateHeaderCount()
         for _, m in ipairs(MM.FullMountList) do
             if MM.SelectedExpansion == -1 or m.expansion == MM.SelectedExpansion then
                 -- Only count mounts the player can use/access
-                if not m.isRestricted and not (MM.filterUnobtainable and m.category == 15) then
+                if not m.isRestricted and not (MM.filterUnobtainable and m.category == 0) then
                     total = total + 1
                     if m.isCollected then
                         owned = owned + 1

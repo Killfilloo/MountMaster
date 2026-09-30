@@ -1,22 +1,17 @@
-local addonName, _ = ... 
-local MM = _G[addonName]
+local addonName, MM = ...
 
--- [[ 1. VARIABLES ]] --
 MM.CurrentPage = 1
 MM.SelectedCategory = 0
+MM.SelectedCategories = MM.SelectedCategories or {} 
+MM.FilteredList = MM.FilteredList or {}
+MM.SelectedExpansion = MM.SelectedExpansion or -2
 
 local pageSize = 16 
 local columns = 4
 local btnSize = 125
 local padding = 12
 
--- Settings boolean: true for 3D models (where available), false for static icons only
-MM.Use3DModels = true
-MM.OnlyUsable = false -- Toggle this via your settings later
-MM.filterUnobtainable = false -- Default to true to filter out unobtainable mounts
-MM.HideUnobtainable = false -- Toggle this via settings later
-
--- [[ 2. GRID CONFIGURATION ]] --
+-- [[ 1. GRID CONFIGURATION ]] --
 local gridPanel = CreateFrame("Frame", "MountMasterGridPanel", MM.ContentContainer)
 gridPanel:SetPoint("TOP", MM.ContentContainer, "TOP", 0, -15)
 -- Set fixed size to match 4x4 grid + padding
@@ -41,7 +36,40 @@ gridPanel:SetScript("OnMouseWheel", function(self, delta)
     end
 end)
 
--- [[ 3. NAVIGATION CONTAINER ]] --
+-- Shared evaluation helper function
+function MM:IsMountFiltered(data)
+    local settings = MM.Settings or {}
+    
+    local onlyUsable = (settings.OnlyUsable ~= nil) and settings.OnlyUsable or MM.OnlyUsable
+    local filterUnobtainable = (settings.filterUnobtainable ~= nil) and settings.filterUnobtainable or MM.filterUnobtainable
+
+    -- 1. "Only show usable mounts" filter
+    if onlyUsable then
+        local playerFaction = UnitFactionGroup("player") -- Returns "Alliance" or "Horde"
+
+        -- Faction restriction checks:
+        -- Faction 1 = Alliance, Faction 2 = Horde
+        if playerFaction == "Alliance" and data.faction == 2 then
+            return true -- Hide Horde mounts for Alliance characters
+        elseif playerFaction == "Horde" and data.faction == 1 then
+            return true -- Hide Alliance mounts for Horde characters
+        end
+
+        -- Class or explicit restriction check
+        if data.isRestricted then
+            return true
+        end
+    end
+
+    -- 2. Unobtainable filter (category 0 or explicit unobtainable flag)
+    if filterUnobtainable and ((data.category or 0) == 0 or data.unobtainable == 1) then
+        return true
+    end
+
+    return false
+end
+
+-- [[ 2. NAVIGATION CONTAINER ]] --
 local navContainer = CreateFrame("Frame", nil, MM.MainFrame, "BackdropTemplate")
 navContainer:SetHeight(35)
 
@@ -51,7 +79,7 @@ line:SetPoint("TOPRIGHT", 0, 0)
 line:SetHeight(1)
 line:SetColorTexture(0.3, 0.3, 0.3, 1)
 
--- [[ 4. NAVIGATION BUTTONS ]] --
+-- [[ 3. NAVIGATION BUTTONS ]] --
 local function CreateNavButton(text)
     local btn = CreateFrame("Button", nil, navContainer, "BackdropTemplate")
     btn:SetSize(30, 30)
@@ -84,7 +112,7 @@ local nextBtn = CreateNavButton(">")
 nextBtn:SetPoint("RIGHT", navContainer, "RIGHT", 0, 0)
 nextBtn:SetScript("OnClick", function() MM.CurrentPage = MM.CurrentPage + 1; MM:UpdateMountGrid() end)
 
--- [[ 5. BUTTON POOL ]] --
+-- [[ 4. BUTTON POOL ]] --
 local buttons = {}
 for i = 1, pageSize do
     local btn = CreateFrame("Button", nil, gridPanel, "BackdropTemplate")
@@ -118,27 +146,29 @@ end
 navContainer:SetPoint("TOPLEFT", buttons[13], "BOTTOMLEFT", 0, -10)
 navContainer:SetPoint("TOPRIGHT", buttons[16], "BOTTOMRIGHT", 0, -10)
 
--- [[ 6. UPDATE FUNCTION ]] --
+-- [[ 5. UPDATE FUNCTION ]] --
 function MM:UpdateMountGrid()
     wipe(MM.FilteredList)
     
-    for _, data in ipairs(MM.FullMountList) do
+    local settings = MM.Settings or {}
+    local use3D = (settings.Use3DModels ~= nil) and settings.Use3DModels or MM.Use3DModels
+
+    for _, data in ipairs(MM.FullMountList or {}) do
+        local catID = data.category or 0
         local matchesExpansion = (MM.SelectedExpansion == -2 or data.expansion == MM.SelectedExpansion)
-        local matchesCategory = (MM.SelectedCategories[data.category] == true)
+        
+        -- FIX: If no categories are explicitly selected yet, default to allowing all categories (or check if explicitly enabled)
+        local matchesCategory = (next(MM.SelectedCategories) == nil) or (MM.SelectedCategories[catID] == true)
+        
         local keepMount = true
-        
-        -- Faction / Class restriction check
-        if MM.OnlyUsable and data.isRestricted then
-            keepMount = false
-        end
-        
-        -- Unobtainable check based on the new tag and setting
-        if MM.HideUnobtainable and data.unobtainable == 1 then
+
+        -- Run centralized filter check
+        if MM:IsMountFiltered(data) then
             keepMount = false
         end
         
         -- Search Query match
-        if MM.SearchQuery and MM.SearchQuery ~= "" then
+        if keepMount and MM.SearchQuery and MM.SearchQuery ~= "" then
             local mountNameLower = data.name and data.name:lower() or ""
             if not string.find(mountNameLower, MM.SearchQuery, 1, true) then
                 keepMount = false
@@ -168,11 +198,11 @@ function MM:UpdateMountGrid()
             btn.mmLabel:SetText(data.name)
             btn:SetScript("OnClick", function() C_MountJournal.SummonByID(data.id) end)
             
-            -- Only tint red if it's the wrong faction; uncollected mounts will look normal (desaturated icon only)
+            -- Backdrop tint based on type
             if data.isRestricted then
                 btn:SetBackdropColor(0.25, 0.08, 0.08, 1)
                 btn:SetBackdropBorderColor(0.5, 0.1, 0.1, 1)
-            elseif data.category == 15 then
+            elseif (data.category or 0) == 0 or data.unobtainable == 1 then
                 btn:SetBackdropColor(0.18, 0.08, 0.28, 1)
                 btn:SetBackdropBorderColor(0.4, 0.15, 0.6, 1)
             else
@@ -180,7 +210,8 @@ function MM:UpdateMountGrid()
                 btn:SetBackdropBorderColor(0.2, 0.2, 0.2, 1)
             end
             
-            local displayID = MM.Use3DModels and C_MountJournal.GetMountInfoExtraByID(data.id) or nil
+            -- Display 3D Model vs 2D Icon based on settings
+            local displayID = use3D and C_MountJournal.GetMountInfoExtraByID(data.id) or nil
             if displayID and displayID > 0 then
                 btn.mmIcon:Hide()
                 btn.mmModel:SetDisplayInfo(displayID)
@@ -202,5 +233,10 @@ function MM:UpdateMountGrid()
     end
 end
 
-MM.SelectedExpansion = -2
-MM:UpdateMountGrid()
+-- Defer initial update to avoid running before FullMountList is populated
+local initFrame = CreateFrame("Frame")
+initFrame:RegisterEvent("PLAYER_LOGIN")
+initFrame:SetScript("OnEvent", function(self)
+    MM:UpdateMountGrid()
+    self:UnregisterEvent("PLAYER_LOGIN")
+end)

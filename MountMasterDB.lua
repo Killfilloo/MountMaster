@@ -9,6 +9,7 @@
 --  [5] = Insanity (0.01% drops, discontinued/legacy, or Glad-level PvP)
 
 --  Categories
+--   [0] = "Unobtainable"
 --   [1] = "Vendor"
 --   [2] = "Achievement"
 --   [3] = "Rare"
@@ -22,8 +23,7 @@
 --   [11] = "Race & Class"
 --   [12] = "Mythic+"
 --   [13] = "World Event" --Returning Events, Timewalking,Brewfest, Hallow's end, Love is in the Air, Noblegarden etc...
---   [14] = "Limited Time" --Might Not Return, Trading Post, Plunderstorm, Remix
---   [15] = "Not In Game"
+--   [14] = "Limited Time" --Might Not Return, Trading Post, Plunderstorm, Remix 
 
 -- Subcategories
 
@@ -56,7 +56,7 @@
 --   [27] = "Game promotions"
 
 --  Expansions
---   [-1] = "Undefined"
+--   [-1] = "Global"
 --   [0] = "Classic"
 --   [1] = "The Burning Crusade"
 --   [2] = "Wrath of the Lich King"
@@ -158,7 +158,7 @@ MountMasterDB = {
     ["name"] = "Winter Wolf",
     ["tips"] = "Winter Wolf. \n\n1. Not obtainable",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["author"] = "Dev",
     ["unobtainable"] = 1,
@@ -286,7 +286,7 @@ MountMasterDB = {
     ["tips"] = "Skeletal Horse. \n\n1. Status: Unobtainable / Not added to the game",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -310,7 +310,7 @@ MountMasterDB = {
     ["tips"] = "Bengal Tiger. \n\n1. Source: Unobtainable. \n2. Note: Unused alpha mount gifted exclusively to player Amara via Make-A-Wish in 2020. Only one exists in-game.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -397,7 +397,7 @@ MountMasterDB = {
     ["tips"] = "White Mechanostrider Mod B. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -408,7 +408,7 @@ MountMasterDB = {
     ["tips"] = "Black Nightsaber. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -419,7 +419,7 @@ MountMasterDB = {
     ["tips"] = "Ancient Frostsaber. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -430,7 +430,7 @@ MountMasterDB = {
     ["tips"] = "Red Wolf. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -441,7 +441,7 @@ MountMasterDB = {
     ["tips"] = "Arctic Wolf. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -452,7 +452,7 @@ MountMasterDB = {
     ["tips"] = "Palomino. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -463,7 +463,7 @@ MountMasterDB = {
     ["tips"] = "White Stallion. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -474,7 +474,7 @@ MountMasterDB = {
     ["tips"] = "Mottled Red Raptor. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -496,7 +496,7 @@ MountMasterDB = {
     ["tips"] = "Ivory Raptor. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -533,7 +533,7 @@ MountMasterDB = {
     ["tips"] = "Icy Blue Mechanostrider Mod A. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -544,7 +544,7 @@ MountMasterDB = {
     ["tips"] = "Frost Ram. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -555,7 +555,7 @@ MountMasterDB = {
     ["tips"] = "Black Ram. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -627,7 +627,7 @@ MountMasterDB = {
     ["tips"] = "Riding Kodo.\n\n1. Status: Unobtainable / Not added to the game",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -664,7 +664,7 @@ MountMasterDB = {
     ["tips"] = "Green Kodo. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -675,7 +675,7 @@ MountMasterDB = {
     ["tips"] = "Teal Kodo. \n\n  One of the original mounts which were removed with patch 1.4 and are no longer obtainable in the game.\nPlayers who had one of these mounts received the Old School Ride achievement.",
     ["author"] = "Dev (Based on Celellach's comment on Wowhead)",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -1859,7 +1859,7 @@ MountMasterDB = {
     ["tips"] = "Amani War Bear. \n\n1. Source: Unobtainable (Legacy). \n2. Note: Reward for timed Zul'Aman run in TBC. Removed in Patch 3.0.2.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = 1,
     ["unobtainable"] = 1,
 
@@ -1870,7 +1870,7 @@ MountMasterDB = {
     ["tips"] = "Brewfest Ram. \n\n1. Source: Unobtainable (Legacy World Event). \n2. Note: Originally acquired via tickets in the initial 2007 Brewfest event. Replaced by Swift version.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -2022,7 +2022,7 @@ MountMasterDB = {
     ["tips"] = "Brewfest Riding Kodo. \n\n1. Source: Unobtainable (Legacy World Event). \n2. Note: Originally acquired during the 2007 Brewfest event. Replaced by Great Brewfest Kodo.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -2075,7 +2075,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Gryphon. \n\n1. Source: Unobtainable (Ghost Flying Mount). \n2. Note: This visual form is automatically used by dead Alliance characters flying in Northrend/Outland.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -2165,7 +2165,7 @@ MountMasterDB = {
    ["tips"] = "Black Polar Bear. \n\n1. Source: Unused / Unreleased Test Mount. \n2. Note: Unobtainable in live gameplay.",
    ["author"] = "AI",
    ["difficulty"] = 5,
-   ["category"] = 15,
+   ["category"] = 0,
    ["unobtainable"] = 1, -- Removed from the game
    ["expansion"] = 2,
 },
@@ -2252,14 +2252,14 @@ MountMasterDB = {
     ["tips"] = "Black Proto-Drake. \n\n1. Source: Unobtainable (Legacy Achievement). \n2. Note: Reward for 'Glory of the Raider (25 player)' meta-achievement during WotLK. Removed in Patch 3.1.0.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["unobtainable"] = 1,
     ["expansion"] = -1,
 },
 {
    ["mountID"] = 265,
    ["name"] = "Blue Proto-Drake",
-   ["tips"] = "Blue Drake. \n\n1. Drop: Skadi the Ruthless (Utgarde Pinnacle - Heroic). \n2. Drop Rate: ~1%.",
+   ["tips"] = "Blue Proto-Drake. \n\n1. Drop: Skadi the Ruthless (Utgarde Pinnacle - Heroic). \n2. Drop Rate: ~1%.",
    ["author"] = "AI",
    ["difficulty"] = 2,
    ["category"] = 7,
@@ -2661,7 +2661,7 @@ MountMasterDB = {
     ["tips"] = "Blue Skeletal Warhorse. \n\nRemoved mount, replaced with Black Skeletal Warhorse",
     ["author"] = "Dev",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["faction"] = 2,
     ["unobtainable"] = 1,
@@ -5610,7 +5610,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Rylak. \n\n1. Source: Unused/Unreleased model variant in game files.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -5670,7 +5670,7 @@ MountMasterDB = {
 {
    ["mountID"] = 791,
     ["name"] = "Felblaze Infernal",
-    ["tips"] = "Felblaze Infernal. \n\n1. Drop: Gul'dan (The Nighthold - Any difficulty). \n2. Drop Rate: ~1%.",
+    ["tips"] = "Felblaze Infernal. \n\n1. Drop: Gul'dan (The Nighthold - Normal / Heroic). \n2. Drop Rate: ~1%.",
     ["author"] = "AI",
     ["difficulty"] = 2,
     ["category"] = 6,
@@ -5729,7 +5729,7 @@ MountMasterDB = {
     ["tips"] = "Flarecore Infernal. \n\n1. Source: Unreleased red infernal mount variant.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 
@@ -6438,7 +6438,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Hippogryph. \n\n1. Source: Unobtainable (Ghost Flying Mount). \n2. Note: This visual form is automatically used by dead Alliance characters flying in Broken Shore.",
     ["author"] = "Dev",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -7011,13 +7011,13 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1013,
-    ["name"] = "Honeyback Harvester",
-    ["tips"] = "Honeyback Harvester. \n\n1. Quest: Honeyback Hive Quest Chain (Stormsong Valley). \n2. Requirement: Raise reputation with Honeyback Hive to Exalted (Alliance-only).",
-    ["author"] = "AI",
-    ["difficulty"] = 1,
-    ["category"] = 5,
-    ["expansion"] = 7,
-    ["faction"] = 1,
+   ["name"] = "Honeyback Harvester",
+   ["tips"] = "Honeyback Harvester. \n\n1. Quest: Honeyback Hive Quest Chain (Stormsong Valley). \n2. Requirement: Raise reputation with Honeyback Hive to Exalted (Alliance-only).",
+   ["author"] = "AI",
+   ["difficulty"] = 1,
+   ["category"] = 11,
+   ["expansion"] = 7,
+   ["faction"] = 1,
 },
 {
    ["mountID"] = 1015,
@@ -8132,7 +8132,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Fathom Ray. \n\n1. Source: Unreleased / Test Mount.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -8141,7 +8141,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Magnetocraft. \n\n1. Source: Unreleased / Test Mount.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -8150,7 +8150,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Armored Gryphon. \n\n1. Source: Unreleased / Test Mount.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -8159,18 +8159,18 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Pterrordax. \n\n1. Source: Unreleased / Test Mount.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
    ["mountID"] = 1277,
-    ["name"] = "Honeyback Hivemother",
-    ["tips"] = "Honeyback Hivemother. \n\n1. Achievement: Complete the meta achievement I'm On Island Time. ",
-    ["author"] = "AI",
-    ["difficulty"] = 1,
-    ["category"] = 2,
-    ["expansion"] = 7,
-    ["faction"] = 1,
+   ["name"] = "Honeyback Hivemother",
+   ["tips"] = "Honeyback Hivemother. \n\n1. Quest: Honeyback Hive reputation chain (Stormsong Valley). \n2. Requirement: Exalted status with Honeyback Hive (Alliance-only).",
+   ["author"] = "AI",
+   ["difficulty"] = 1,
+   ["category"] = 11,
+   ["expansion"] = 7,
+   ["faction"] = 1,
 },
 {
    ["mountID"] = 1282,
@@ -10261,7 +10261,7 @@ MountMasterDB = {
    ["tips"] = "[DND] Test Mount JZB. \n\n1. Source: Internal Developer Test Mount (Unobtainable).",
    ["author"] = "AI",
    ["difficulty"] = 5,
-   ["category"] = 15,
+   ["category"] = 0,
    ["unobtainable"] = 1, -- Removed from the game
    ["expansion"] = 8,
 },
@@ -10457,7 +10457,7 @@ MountMasterDB = {
     ["tips"] = "Swift Spectral Drake. \n\n1. Source: Unreleased / Developer mount entry.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
 },
 {
@@ -11894,7 +11894,7 @@ MountMasterDB = {
    ["tips"] = "Archmage's Great Raven. \n\n1. Source: Trading Post purchase.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 114,
+   ["category"] = 14,
    ["expansion"] = 10,
 },
 {
@@ -12544,7 +12544,7 @@ MountMasterDB = {
     ["tips"] = "Soar. \n\n1. Class Ability: Dracthyr racial mobility feature / Dynamic flying.",
     ["author"] = "AI",
     ["difficulty"] = 1,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = 9,
 },
 {
@@ -14001,7 +14001,7 @@ MountMasterDB = {
    ["tips"] = "Cabbage Pseudoshell. \n\n1. Source: Unreleased / Datamined Asset. \n2. Status: Currently unavailable. Model exists in the build as a test-bed asset but currently lacks a vendor or drop source.",
    ["author"] = "AI",
    ["difficulty"] = 5,
-   ["category"] = 15, -- Not In Game
+   ["category"] = 0, -- Not In Game
    ["unobtainable"] = 1, -- Removed from the game
 
 },
@@ -14024,7 +14024,7 @@ MountMasterDB = {
    ["tips"] = "Accented Pseudoshell. \n\n1. Source: Unreleased / Datamined Asset. \n2. Status: Currently unavailable. This model is a higher-fidelity variant of the Pseudoshell line and is awaiting scheduled content implementation.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 15, -- Not In Game
+   ["category"] = 0, -- Not In Game
    ["unobtainable"] = 1, -- Removed from the game
 
 },
@@ -14038,6 +14038,9 @@ MountMasterDB = {
     ["subcategory"] = 18,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 2327,
@@ -14139,7 +14142,7 @@ MountMasterDB = {
    ["tips"] = "Hypo-Speed X6000. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The client files contain this high-fidelity, high-speed modern goblin mechanical vehicle mount, but it has not yet been given a live acquisition source.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 15, -- Not In Game
+   ["category"] = 0, -- Not In Game
    ["unobtainable"] = 1, -- Removed from the game
 
 },
@@ -14247,7 +14250,7 @@ MountMasterDB = {
    ["tips"] = "Stormgilded Celestial. \n\n1. Source: Region Exclusive Promotion (China Region). \n2. Status: Unobtainable for global clients. This lightning-infused celestial mount was exclusively distributed via the NetEase 'New Year's Fortune Box' promotional event and has no active acquisition path on Western servers.",
    ["author"] = "AI",
    ["difficulty"] = 5,
-   ["category"] = 15,
+   ["category"] = 0,
    ["unobtainable"] = 1, -- Removed from the game
 
 },
@@ -14266,7 +14269,7 @@ MountMasterDB = {
    ["tips"] = "Ghastropod. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and unique dark snail mount shell model exist within the game files but it has not yet been given a live acquisition source.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 15, -- Not In Game
+   ["category"] = 0, -- Not In Game
    ["unobtainable"] = 1, -- Removed from the game
 },
 {
@@ -14299,7 +14302,7 @@ MountMasterDB = {
    ["tips"] = "Fel Spirehawk. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and model files (a Fel-tinged version of the Violet Spellwing skeleton) were created during data structures setup but the mount has not yet been assigned a live acquisition source.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 15, -- Not In Game
+   ["category"] = 0, -- Not In Game
    ["unobtainable"] = 1, -- Removed from the game
 
 },
@@ -14319,7 +14322,7 @@ MountMasterDB = {
    ["tips"] = "Lavender Pseudoshell. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and spell ID exist within the client databases but the mount has not yet been assigned a live acquisition source.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 15, -- Not In Game
+   ["category"] = 0, -- Not In Game
    ["unobtainable"] = 1, -- Removed from the game
 
 },
@@ -14794,7 +14797,7 @@ MountMasterDB = {
    ["tips"] = "Adorned Northeron Gryphon. \n\n1. Source: The Trading Post (Upcoming/Unreleased). \n2. Cost: 650 Trader's Tender (Estimated). \n3. Status: Currently unreleased in the live Trading Post rotation.",
    ["author"] = "AI",
    ["difficulty"] = 1,
-   ["category"] = 15,
+   ["category"] = 0,
    ["expansion"] = -1,
 
 },
@@ -14997,7 +15000,7 @@ MountMasterDB = {
    ["tips"] = "Blazing Royal Fire Hawk. \n\n1. Status: Region Locked / Unobtainable. \n2. Note: Exclusive promotional mount available only on the Mainland China region live servers. Not accessible on Global/Western clients.",
    ["author"] = "AI",
    ["difficulty"] = 0,
-   ["category"] = 15, -- Not In Game (For Global Clients)
+   ["category"] = 0, -- Not In Game (For Global Clients)
    ["unobtainable"] = 1, -- Removed from the game
 },
 {
@@ -15135,7 +15138,7 @@ MountMasterDB = {
     ["tips"] = "Midnight Butterfly.",
     ["author"] = "AI",
     ["difficulty"] = 5,
-    ["category"] = 15,
+    ["category"] = 0,
     ["expansion"] = -1,
     ["unobtainable"] = 1,
 

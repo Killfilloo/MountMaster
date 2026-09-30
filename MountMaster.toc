@@ -20,8 +20,8 @@ Localization\deDE.lua
 
 MountMasterDB.lua
 MountMaster.lua
-Modules\Settings.lua
-Modules\MountGrid.lua
 Modules\ExpansionPanel.lua
 Modules\FilterPanel.lua
 Modules\MountInfo.lua
+Modules\Settings.lua
+Modules\MountGrid.lua

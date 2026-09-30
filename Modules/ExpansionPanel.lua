@@ -1,6 +1,5 @@
-local addonName, _ = ... 
-local MM = _G[addonName] 
-local L = MM.Locales
+local addonName, MM = ...
+local L = MM.Locales or {} 
 
 MM.SelectedExpansion = -2 
 
@@ -12,10 +11,17 @@ separator:SetPoint("BOTTOMRIGHT", 0, 0)
 separator:SetTexture("Interface\\Buttons\\WHITE8X8")
 separator:SetVertexColor(0.15, 0.15, 0.15, 1)
 
+-- Sticky Container Top (All Expansions -2)
 local stickyContainer = CreateFrame("Frame", nil, MM.LeftContainer)
 stickyContainer:SetPoint("TOPLEFT", 5, -5)
 stickyContainer:SetPoint("TOPRIGHT", -5, -5)
 stickyContainer:SetHeight(48)
+
+-- Sticky Container Bottom (Global -1)
+local bottomContainer = CreateFrame("Frame", nil, MM.LeftContainer)
+bottomContainer:SetPoint("BOTTOMLEFT", 5, 5)
+bottomContainer:SetPoint("BOTTOMRIGHT", -5, 5)
+bottomContainer:SetHeight(48)
 
 local function UpdateScrollIndicators()
     local cur = MM.ExpansionScrollFrame:GetVerticalScroll()
@@ -29,7 +35,6 @@ local function UpdateScrollIndicators()
 
     local safeCur = math.max(0, math.min(cur, max))
     
-    -- Adjusted thresholds to handle smaller scroll ranges gracefully
     local showTop = (safeCur > 5)
     local showBottom = (safeCur < (max - 5))
     
@@ -44,17 +49,15 @@ end
 -- [[ EXPANSION LIST SCROLL INDICATORS ]] --
 local function CreateScrollIndicator(isBottom)
     local parent = MM.LeftContainer
-    -- Fix the name generation so it doesn't concatenate a boolean directly to a string poorly
     local frame = CreateFrame("Frame", "MM_Indicator_" .. (isBottom and "Bottom" or "Top"), parent)
     
     frame:SetSize(324, 30)
     frame:SetFrameStrata("DIALOG")
     frame:SetFrameLevel(1000)
     
-if isBottom then
+    if isBottom then
         frame:SetPoint("BOTTOMLEFT", MM.ExpansionScrollFrame, "BOTTOMLEFT", 0, -2)
     else
-        -- Anchor to the top of the ScrollFrame instead of the parent container
         frame:SetPoint("TOPLEFT", MM.ExpansionScrollFrame, "TOPLEFT", 0, 2)
     end
 
@@ -63,11 +66,9 @@ if isBottom then
     tex:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
 
     if isBottom then
-        -- Bottom indicator: Fades from yellow/orange (0.7, 0.4, 0, 0.9) down to transparent
         tex:SetGradient("VERTICAL", CreateColor(0, 0, 0, 0.7), CreateColor(0, 0, 0, 0))
         tex:SetTexCoord(0, 1, 1, 0)
     else
-        -- Top indicator: Fades from yellow/orange down to transparent
         tex:SetGradient("VERTICAL", CreateColor(0, 0, 0, 0), CreateColor(0, 0, 0, 0.7))
     end
     
@@ -82,10 +83,9 @@ if isBottom then
     return frame
 end
 
--- 2. Define the scroll frame
 MM.ExpansionScrollFrame = CreateFrame("ScrollFrame", "MM_ExpansionScrollFrame", MM.LeftContainer, "BackdropTemplate")
 MM.ExpansionScrollFrame:SetPoint("TOPLEFT", stickyContainer, "BOTTOMLEFT", 0, -5)
-MM.ExpansionScrollFrame:SetPoint("BOTTOMRIGHT", -5, 5)
+MM.ExpansionScrollFrame:SetPoint("BOTTOMRIGHT", bottomContainer, "TOPRIGHT", 0, 5)
 MM.ExpansionScrollFrame:SetClipsChildren(true)
 MM.ExpansionScrollFrame:EnableMouseWheel(true)
 
@@ -94,25 +94,26 @@ scrollChild:SetSize(324, 1)
 MM.ExpansionScrollFrame:SetScrollChild(scrollChild)
 MM.ScrollChild = scrollChild
 
--- Set the Script on the SAME ScrollFrame
 MM.ExpansionScrollFrame:SetScript("OnMouseWheel", function(self, delta)
     local curScroll = self:GetVerticalScroll()
     local newScroll = curScroll - (delta * 50)
     local maxScroll = self:GetVerticalScrollRange()
     
-    -- Clamp it immediately so it never goes below 0 or above maxScroll
     local finalScroll = math.max(0, math.min(newScroll, maxScroll))
     self:SetVerticalScroll(finalScroll)
 
     UpdateScrollIndicators()
 end)
 
--- Store them in the MM table so they are accessible anywhere
-MM.ExpansionScrollBottom = CreateScrollIndicator(true)   -- true means bottom
-MM.ExpansionScrollTop = CreateScrollIndicator(false)  -- false means top
+MM.ExpansionScrollBottom = CreateScrollIndicator(true)
+MM.ExpansionScrollTop = CreateScrollIndicator(false)
 
 -- [[ REFRESH FUNCTION ]] --
 function MM:RefreshExpansionPanel()
+    local L_Loc = MM.Locales or L or {}
+    local expansions = L_Loc.Expansions or {}
+
+    -- Clear previous frames
     for _, child in ipairs({MM.ScrollChild:GetChildren()}) do
         child:Hide()
         child:SetParent(nil)
@@ -121,16 +122,31 @@ function MM:RefreshExpansionPanel()
         child:Hide()
         child:SetParent(nil)
     end
+    for _, child in ipairs({bottomContainer:GetChildren()}) do
+        child:Hide()
+        child:SetParent(nil)
+    end
 
-    local yOffset = 0
+    -- Separate tracking so scrollChild buttons never anchor to sticky/bottom containers
+    local lastScrollButton = nil
+    local scrollButtonCount = 0
 
-    local function CreateExpButton(name, id, parent, yPos, texturePath)
+    local function CreateExpButton(name, id, parent, texturePath)
         local btn = CreateFrame("Button", nil, parent, "BackdropTemplate")
         btn:SetSize(320, 48)
-        if parent == stickyContainer then
-            btn:SetPoint("TOPLEFT", 0, 0)
+
+        if parent == stickyContainer or parent == bottomContainer then
+            -- Position inside sticky frames (Top or Bottom)
+            btn:SetPoint("TOPLEFT", parent, "TOPLEFT", 0, 0)
         else
-            btn:SetPoint("TOPLEFT", 0, yPos)
+            -- Position inside scrollChild
+            if not lastScrollButton then
+                btn:SetPoint("TOPLEFT", scrollChild, "TOPLEFT", 0, 0)
+            else
+                btn:SetPoint("TOPLEFT", lastScrollButton, "BOTTOMLEFT", 0, -2)
+            end
+            lastScrollButton = btn
+            scrollButtonCount = scrollButtonCount + 1
         end
 
         local isActive = (MM.SelectedExpansion == id)
@@ -139,12 +155,10 @@ function MM:RefreshExpansionPanel()
         btn:SetBackdropColor(0, 0, 0, 0)
         btn:SetBackdropBorderColor(0.15, 0.15, 0.15, 1)
         
-        -- 1. Banner Art
         btn.Banner = btn:CreateTexture(nil, "BACKGROUND")
         btn.Banner:SetPoint("TOPLEFT", 1, -1)
         btn.Banner:SetPoint("BOTTOMRIGHT", -1, 1)
         btn.Banner:SetTexture(texturePath or "Interface\\EncounterJournal\\UI-EJ-BOSS-Default")
-        -- Ensure the texture scales correctly
         btn.Banner:SetTexCoord(0, 1, 0, 1)
 
         btn.Border = CreateFrame("Frame", nil, btn, "BackdropTemplate")
@@ -152,11 +166,10 @@ function MM:RefreshExpansionPanel()
         btn.Border:SetPoint("BOTTOMRIGHT", -2, 2)
         btn.Border:SetBackdrop({
             edgeFile = "Interface\\Buttons\\WHITE8X8", 
-            edgeSize = 2 -- This creates your 2px border width
+            edgeSize = 2
         })
-        btn.Border:SetBackdropBorderColor(1, 1, 1, 0.15) -- White, low alpha border
+        btn.Border:SetBackdropBorderColor(1, 1, 1, 0.15)
 
-        -- 2. Dual Fade (Left & Right)
         local fadeAlpha = 0.95
         
         btn.FadeL = btn:CreateTexture(nil, "OVERLAY")
@@ -171,38 +184,43 @@ function MM:RefreshExpansionPanel()
         btn.FadeR:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
         btn.FadeR:SetGradient("HORIZONTAL", CreateColor(0, 0, 0, 0), CreateColor(0, 0, 0, fadeAlpha))
 
-        -- 3. Stats Calculation
+        -- Stats Calculation
         local owned = 0
         local total = 0
-        for _, m in ipairs(MM.FullMountList) do
-            if id == -1 or m.expansion == id then
-                -- Only count mounts the player can use/access
-                if not m.isRestricted and not (MM.filterUnobtainable and m.category == 15) then
-                    total = total + 1
-                    if m.isCollected then owned = owned + 1 end
+        if MM.FullMountList then
+            for _, m in ipairs(MM.FullMountList) do
+                local matchExp = (id == -2) or 
+                                (id == -1 and (m.expansion == -1 or not m.expansion)) or 
+                                (m.expansion == id)
+
+                if matchExp then
+                    -- Run centralized filter check
+                    if not MM:IsMountFiltered(m) then
+                        total = total + 1
+                        if m.isCollected then 
+                            owned = owned + 1 
+                        end
+                    end
                 end
             end
         end
 
-        -- Inside your expansion button creation:
         btn.Dimmer = btn:CreateTexture(nil, "OVERLAY")
         btn.Dimmer:SetPoint("TOPLEFT", 1, -1)
         btn.Dimmer:SetPoint("BOTTOMRIGHT", -1, 1)
         btn.Dimmer:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-        btn.Dimmer:SetVertexColor(0, 0, 0, 0.5) -- Darkens banner for non-selected
+        btn.Dimmer:SetVertexColor(0, 0, 0, 0.5)
 
-        -- Update logic
         if isActive then
-            btn.Dimmer:Hide() -- Selected is full brightness
+            btn.Dimmer:Hide()
             btn:SetBackdropBorderColor(0.7, 0.5, 0, 1)
             btn.Banner:SetAlpha(1.0)
         else
-            btn.Dimmer:Show() -- Inactive is darkened
+            btn.Dimmer:Show()
             btn:SetBackdropBorderColor(0, 0, 0, 0.3)
-            btn.Banner:SetAlpha(1.0) -- Keep banner alpha at 1.0; let Dimmer do the work
+            btn.Banner:SetAlpha(1.0)
         end
 
-        -- 5. Typography
         btn.Name = btn:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         btn.Name:SetPoint("LEFT", 10, 5)
         btn.Name:SetText(name)
@@ -217,14 +235,21 @@ function MM:RefreshExpansionPanel()
             MM.SelectedExpansion = id
             MM.CurrentPage = 1
             MM:RefreshExpansionPanel()
-            if MM.UpdateMountGrid then MM:UpdateMountGrid() end
+            
+            if MM.RefreshCategoryPanel then 
+                MM:RefreshCategoryPanel() 
+            end
+            if MM.UpdateMountGrid then 
+                MM:UpdateMountGrid() 
+            end
         end)
-        
+                
         return btn
     end
 
     local function GetTextureForID(id)
-        if id == -1 then return "Interface\\Addons\\MountMaster\\Media\\ALL_Banner.png" end
+        if id == -2 then return "Interface\\Addons\\MountMaster\\Media\\ALL_Banner.png" end
+        if id == -1 then return "Interface\\Addons\\MountMaster\\Media\\Global_Banner.png" end
         if id == 0 then return "Interface\\Addons\\MountMaster\\Media\\Classic_Banner.png" end
         if id == 1 then return "Interface\\Addons\\MountMaster\\Media\\TBC_Banner.png" end
         if id == 2 then return "Interface\\Addons\\MountMaster\\Media\\WOTLK_Banner.png" end
@@ -240,26 +265,44 @@ function MM:RefreshExpansionPanel()
         return nil
     end
 
-    CreateExpButton("ALL EXPANSIONS", -1, stickyContainer, 0, GetTextureForID(-1))
+    -- 1. Sticky Top Button (ALL EXPANSIONS)
+    local allTitle = L_Loc.AllExpansions and string.upper(L_Loc.AllExpansions) or "ALL EXPANSIONS"
+    CreateExpButton(allTitle, -2, stickyContainer, GetTextureForID(-2))
 
-    local yOffset = 0
+    -- 2. Scrolling Chronological Expansions (Midnight down to Classic: 11..0)
     local maxExp = 0
-    for k in pairs(L.Expansions) do if type(k) == "number" and k > maxExp then maxExp = k end end
-
-    for i = maxExp, 0, -1 do
-        if L.Expansions[i] then
-            CreateExpButton(string.upper(L.Expansions[i]), i, scrollChild, yOffset, GetTextureForID(i))
-            yOffset = yOffset - 50
+    for k in pairs(expansions) do
+        if type(k) == "number" and k > maxExp then
+            maxExp = k
         end
     end
 
-    local totalHeight = math.abs(yOffset)
+    for i = maxExp, 0, -1 do
+        if expansions[i] then
+            CreateExpButton(
+                string.upper(expansions[i]),
+                i,
+                scrollChild,
+                GetTextureForID(i)
+            )
+        end
+    end
 
-    --scrollChild:SetHeight(math.abs(yOffset))
-    scrollChild:SetSize(324, totalHeight)
+    -- 3. Sticky Bottom Button (GLOBAL)
+    local globalTitle = expansions[-1] and string.upper(expansions[-1]) or "GLOBAL"
+    CreateExpButton(globalTitle, -1, bottomContainer, GetTextureForID(-1))
+
+    -- 4. Calculate Scroll Canvas Height (50px per scrollable button)
+    local totalHeight = scrollButtonCount * 50
+    scrollChild:SetHeight(totalHeight)
     MM.ExpansionScrollFrame:UpdateScrollChildRect()
 
     UpdateScrollIndicators()
 end
 
-MM:RefreshExpansionPanel()
+local frame = CreateFrame("Frame")
+frame:RegisterEvent("PLAYER_LOGIN")
+frame:SetScript("OnEvent", function(self)
+    MM:RefreshExpansionPanel()
+    self:UnregisterEvent("PLAYER_LOGIN")
+end)

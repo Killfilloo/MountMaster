@@ -2,6 +2,7 @@ MountMasterLocales = MountMasterLocales or {}
 
 MountMasterLocales.enGB = {
     Categories = {
+        [0] = "Unobtainable",
         [1] = "Vendor",
         [2] = "Achievement",
         [3] = "Rare",
@@ -16,7 +17,6 @@ MountMasterLocales.enGB = {
         [12] = "Mythic+",
         [13] = "World Event", --Returning Events, Timewalking,Brewfest, Hallow's end, Love is in the Air, Noblegarden etc...
         [14] = "Limited Time", --Might Not Return, Trading Post, Plunderstorm, Remix
-        [15] = "Unobtainable",
     },
 
     Factions = {
@@ -25,7 +25,7 @@ MountMasterLocales.enGB = {
     },
 
     Expansions = {
-        [-1] = "Undefined",
+        [-1] = "Global",
         [0] = "Classic",
         [1] = "The Burning Crusade",
         [2] = "Wrath of the Lich King",
@@ -74,7 +74,7 @@ MountMasterLocales.enGB = {
         [33] = "Draenei", [34] = "Worgen", [35] = "Pandaren", [36] = "Dracthyr", 
         [37] = "Allied Races", 
         [38] = "Paladin",  [39] = "Demon Hunter", 
-        [40] = "Warlock", [41] = "Death Knight"
+        [40] = "Warlock", [41] = "Death Knight",
         [42] = "Orc", [43] = "Undead",  [44] = "Tauren", [45] = "Troll", [46] = "Goblin", [47] = "Blood Elf", 
         [48] = "Alchemy", [49] = "Archaeology",  [50] = "Engineering", [51] = "Fishing", [52] = "Jewelcrafting",
         [53] = "Tailoring", [54] = "Leatherworking", [55] = "Blacksmith",

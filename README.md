@@ -16,7 +16,7 @@ Categories: Sort mounts by source, including Vicious, AOTC, Rare Drops, and many
 <h3>State of the Addon</h3><br/>
 Mounts: Most mounts have been added with baseline data. Work is ongoing to ensure every mount is sorted into its correct category and expansion. <br/>
 (Note: Tips are currently AI-generated to serve as a temporary baseline.)<br/>
-Expansions & Categories: Every expansion is active with visual banners on the right panel. Categories and subcategories are established and will expand as remaining mounts are categorized.<br/>
+Expansions & Categories: Every expansion is active with visual banners on the left panel. Categories and subcategories are established and will expand as remaining mounts are categorized.<br/>
 UI / UX: As an initial alpha release, the UI is in a minimal state, stripped down from earlier development builds to focus on core logic and bug fixes. UI polish is planned for upcoming updates.<br/>
 Settings: Basic runtime settings are working, though saving and loading settings across sessions is being refactored.<br/>
 Localization: Folder and file structures for localization are established. Localization will translate UI elements (mount tips will remain in English).<br/>
@@ -24,16 +24,21 @@ Localization: Folder and file structures for localization are established. Local
 <hr/>
 
 <h3>Latest Added</h3><br/>
+Alpha Release v0.2: Lots of changes to variables and fixed code errors making mountlists not generate as intented.<br/>
+UI: Improvements to the Expansions, including the new "Global" option thats in a fixed position at the bottom bellow the scrollable expansion list.<br/>
+UI: Categories had some updates but still just in functional state.<br/>
+UI: The addon still has colorful backgrounds and white borders to help with debugging.<br/>
+
 Alpha Release v0.1: Core mount database, baseline filtering logic, and preliminary 3D model viewer.<br/>
 Subcategories Framework: Initial subcategory support for factions, races, professions, and reputations.<br/>
 AI Baseline Tips: Temporary placeholder tips populated across the current mount list.<br/>
 
 <h3>Known Bugs & Issues</h3><br/>
-[ ] Settings do not persist properly between UI reloads or relogs.<br/>
+[Fixed in v0.2] Settings do not persist properly between UI reloads or relogs.<br/>
 [ ] Visual overlapping on certain screen resolutions / UI scale levels.<br/>
 
 <h3>Missing / To Be Done</h3><br/>
-[ ] Settings Overhaul: Rebuild the backend settings system to ensure full persistence and profile saving.<br/>
+[Updated in v0.2] Settings Overhaul: Rebuild the backend settings system to ensure full persistence and profile saving. -Note its still in a functional state with options and ui<br/>
 [ ] UI / UX Polish: Redesign the interface to match release-level visual standards.<br/>
 [ ] Community Tip Integration: Replace temporary AI-generated tips with verified community contributions.<br/>
 [ ] Localization: Populate translation files for German, French, and Spanish UI text.<br/>

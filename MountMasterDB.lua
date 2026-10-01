@@ -4053,11 +4053,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 476,
-   ["name"] = "Yu'lei, Daughter of Jade",
-   ["tips"] = "Yu'lei, Daughter of Jade. \n\n1. Source: Purchased from Mistweaver Xia on the Timeless Isle during the Mists of Pandaria Timewalking event. \n2. Cost: 5,000 Timewarped Badges. \n3. Strategy: Save the 'Shrouded Timewarped Coin' from your first dungeon of the event for a 500-badge head start.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13,
+    ["name"] = "Yu'lei, Daughter of Jade",
+    ["tips"] = "Yu'lei, Daughter of Jade. \n\n1. Source: Purchased from Mistweaver Xia on the Timeless Isle during the Mists of Pandaria Timewalking event. \n2. Cost: 5,000 Timewarped Badges. \n3. Strategy: Save the 'Shrouded Timewarped Coin' from your first dungeon of the event for a 500-badge head start.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 477,
@@ -4626,7 +4630,7 @@ MountMasterDB = {
 {
    ["mountID"] = 544,
     ["name"] = "Armored Bloodwing",
-    ["tips"] = "Armored Bloodwing. \n\n1. Source: In-Game Shop / Trading Post. \n2. Note: Armored bat flying mount.",
+    ["tips"] = "Armored Bloodwing. \n\n1. Source: In-Game Shop\n2. Note: Armored bat flying mount.",
     ["author"] = "AI",
     ["difficulty"] = 1,
     ["category"] = 10,
@@ -4865,7 +4869,7 @@ MountMasterDB = {
 {
    ["mountID"] = 594,
     ["name"] = "Grinning Reaver",
-    ["tips"] = "Grinning Reaver. \n\n1. Source: In-Game Shop / Trading Post. \n2. Note: Insectoid rylak flying mount.",
+    ["tips"] = "Grinning Reaver. \n\n1. Source: In-Game Shop\n2. Note: Insectoid rylak flying mount.",
     ["author"] = "AI",
     ["difficulty"] = 1,
     ["category"] = 10,
@@ -8486,12 +8490,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1326,
-   ["name"] = "Awakened Mindborer",
-   ["tips"] = "Awakened Mindborer. \n\n1. Achievement: Battle for Azeroth Keystone Master: Season 4. \n2. Requirement: Complete all BFA Season 4 dungeons on Mythic +15 or higher within time.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 11,
-   ["expansion"] = 7,
+    ["name"] = "Awakened Mindborer",
+    ["tips"] = "Awakened Mindborer. \n\n1. Achievement: Battle for Azeroth Keystone Master: Season 4. \n2. Requirement: Complete all BFA Season 4 dungeons on Mythic +15 or higher within time.\n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 1297,
@@ -8984,13 +8990,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1405,
-   ["name"] = "Restoration Deathwalker",
-   ["tips"] = "Restoration Deathwalker. \n\n1. Achievement: Shadowlands Keystone Master: Season 1. \n2. Requirement: Unobtainable (Legacy Mythic+ Season 1 Reward).",
-   ["author"] = "AI",
-   ["difficulty"] = 5,
-   ["category"] = 12,
-   ["unobtainable"] = 1, -- Removed from the game
-   ["expansion"] = 8,
+    ["name"] = "Restoration Deathwalker",
+    ["tips"] = "Restoration Deathwalker. \n\n1. Achievement: Shadowlands Keystone Master: Season 1. \n2. Requirement: Unobtainable (Legacy Mythic+ Season 1 Reward).\n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 1406,
@@ -9093,13 +9101,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1419,
-   ["name"] = "Sintouched Deathwalker",
-   ["tips"] = "Sintouched Deathwalker. \n\n1. Achievement: Shadowlands Keystone Master: Season 1. \n2. Requirement: Unobtainable (Legacy Mythic+ Season 1 Reward).",
-   ["author"] = "AI",
-   ["difficulty"] = 5,
-   ["category"] = 12,
-   ["unobtainable"] = 1, -- Removed from the game
-   ["expansion"] = 8,
+    ["name"] = "Sintouched Deathwalker",
+    ["tips"] = "Sintouched Deathwalker. \n\n1. Achievement: Shadowlands Keystone Master: Season 1. \n2. Requirement: Unobtainable (Legacy Mythic+ Season 1 Reward).\n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 1420,
@@ -9184,30 +9194,36 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1430,
-   ["name"] = "Desertwing Hunter (Raptora)",
-   ["tips"] = "Desertwing Hunter (Raptora). \n\n1. Schematic: Located at /way 62.0 43.5. It's sitting on top of a very high, flat-topped rock pillar in the Path of Inception. You will need to fly or use a 'Dimensional Translator' cypher to reach it. \n2. Material: 1x 'Wind's Infinite Call'. \n3. How-to: This is a rare drop from Raptora-type rares like 'Xy'rath the Covetous' (/way 63.6 49.4) or from 'Pulp-Covered Relics'. \n4. Components: 1x Raptora Lattice, 400x Genesis Mote.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Requires flying/climbing)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Desertwing Hunter",
+    ["tips"] = "Desertwing Hunter. \n\n1. Schematic: Located at /way 62.0 43.5. It's sitting on top of a very high, flat-topped rock pillar in the Path of Inception. You will need to fly or use a 'Dimensional Translator' cypher to reach it. \n2. Material: 1x 'Wind's Infinite Call'. \n3. How-to: This is a rare drop from Raptora-type rares like 'Xy'rath the Covetous' (/way 63.6 49.4) or from 'Pulp-Covered Relics'. \n4. Components: 1x Raptora Lattice, 400x Genesis Mote.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1431,
-   ["name"] = "Pale Regal Cervid",
-   ["tips"] = "Pale Regal Cervid. \n\n1. Source: Protoform Synthesis (Zereth Mortis). \n2. Schematic: Mailed to you by 'The Enlightened' after you research the final tier of any Cypher column (Achievement: Cyphers of the First Ones). \n3. Material: 1x 'Protoform Sentience Crown'. Rare drop from Elite Automas in the desert or purchased via 'Olea Cache'. \n4. Components: 1x Cervid Lattice, 400x Genesis Mote. \n5. Bug Fix: The 2026/Patch 11.1 fix ensures the schematic now correctly registers at the forge upon turn-in.",
-   ["author"] = "AI",
-   ["difficulty"] = 5, -- Very Hard (Weeks of Cypher research)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Pale Regal Cervid",
+    ["tips"] = "Pale Regal Cervid. \n\n1. Source: Protoform Synthesis (Zereth Mortis). \n2. Schematic: Mailed to you by 'The Enlightened' after you research the final tier of any Cypher column (Achievement: Cyphers of the First Ones). \n3. Material: 1x 'Protoform Sentience Crown'. Rare drop from Elite Automas in the desert or purchased via 'Olea Cache'. \n4. Components: 1x Cervid Lattice, 400x Genesis Mote. \n5. Bug Fix: The 2026/Patch 11.1 fix ensures the schematic now correctly registers at the forge upon turn-in.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1433,
-   ["name"] = "Vespoid Flutterer (Wasp)",
-   ["tips"] = "Vespoid Flutterer (Wasp). \n\n1. Schematic: Located at /way 41.5 62.4. It is perched on top of a floating, broken stone archway near the Terrace of Enlightenment. \n2. Material: 1x 'Wind's Infinite Call'. This material is Unique (2), so you can farm both at once for this and the Desertwing Hunter. \n3. Lattice Farm: Kill wasps in the Droning Precipice (Southeast). \n4. Components: 1x Vespoid Lattice, 400x Genesis Mote.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Requires flying)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Vespoid Flutterer",
+    ["tips"] = "Vespoid Flutterer\n\n1. Schematic: Located at /way 41.5 62.4. It is perched on top of a floating, broken stone archway near the Terrace of Enlightenment. \n2. Material: 1x 'Wind's Infinite Call'. This material is Unique (2), so you can farm both at once for this and the Desertwing Hunter. \n3. Lattice Farm: Kill wasps in the Droning Precipice (Southeast). \n4. Components: 1x Vespoid Lattice, 400x Genesis Mote.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1434,
@@ -9319,12 +9335,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1448,
-   ["name"] = "Serenade (Snail)",
-   ["tips"] = "Serenade (Snail). \n\n1. Schematic: Inside Sepulcher of the First Ones raid (1st room). From the entrance, look straight ahead to the back of the room. Jump down to the water on the left side. It is hidden behind a giant chain-pillar under the main platform. \n2. Rare Material: 'Crystallized Echo of the First Song'. Lootable blue crystal near waterfalls on the NE raid island. \n3. Echo /way: 77.6 59.0 (cave), 78.2 54.4 (waterfall), or 77.4 45.3 (top). \n4. Note: You MUST have 'Sopranian Understanding' researched to see the Echoes!",
-   ["author"] = "AI",
-   ["difficulty"] = 2, -- Easy (Soloable schematic)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Serenade (Snail)",
+    ["tips"] = "Serenade (Snail). \n\n1. Schematic: Inside Sepulcher of the First Ones raid (1st room). From the entrance, look straight ahead to the back of the room. Jump down to the water on the left side. It is hidden behind a giant chain-pillar under the main platform. \n2. Rare Material: 'Crystallized Echo of the First Song'. Lootable blue crystal near waterfalls on the NE raid island. \n3. Echo /way: 77.6 59.0 (cave), 78.2 54.4 (waterfall), or 77.4 45.3 (top). \n4. Note: You MUST have 'Sopranian Understanding' researched to see the Echoes!",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1449,
@@ -9819,77 +9837,107 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1520,
-   ["name"] = "Soultwisted Deathwalker",
-   ["tips"] = "Soultwisted Deathwalker. \n\n1. Source: Achievement 'Shadowlands Keystone Master: Season 2'. \n2. Status: Unobtainable (Legacy). \n3. Appearance: This is the light-blue/cyan ghostly version of the Keystone Master elementals. \n4. Note: Like your other Deathwalker (1544), this is a prestige mount that is currently retired.",
-   ["author"] = "AI",
-   ["difficulty"] = 5, -- Impossible (Legacy)
-   ["category"] = 12, -- Mythic+
+    ["name"] = "Soultwisted Deathwalker",
+    ["tips"] = "Soultwisted Deathwalker. \n\n1. Source: Achievement 'Shadowlands Keystone Master: Season 2'. \n2. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+    ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 1521,
-   ["name"] = "Val'sharah Hippogryph",
-   ["tips"] = "Val'sharah Hippogryph. \n\n1. Source: Legion Timewalking Vendor. \n2. Merchant: Aridormi in Dalaran (Legion) during the Timewalking event. \n3. Cost: 5,000 Timewarped Badges. \n4. Requirement: Only available during the Legion Timewalking week. Use your first 500-badge quest token each event to save up quickly!",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Currency farming)
+    ["name"] = "Val'sharah Hippogryph",
+    ["tips"] = "Val'sharah Hippogryph. \n\n1. Source: Legion Timewalking Vendor. \n2. Merchant: Aridormi in Dalaran (Legion) during the Timewalking event. \n3. Cost: 5,000 Timewarped Badges. \n4. Requirement: Only available during the Legion Timewalking week. Use your first 500-badge quest token each event to save up quickly!",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
+
 },
 {
    ["mountID"] = 1522,
-   ["name"] = "Heartlight Vombata",
-   ["tips"] = "Heartlight Vombata. \n\n1. Source: Achievement 'The Enlightened'. \n2. Requirement: Reach 'Exalted' reputation with The Enlightened faction in Zereth Mortis. \n3. How-to: Purchase the 'Heartlight Vombata' from Vilo (The Enlightened Quartermaster) at /way 34.8 64.2 in Haven. \n4. Cost: 5,000 Reservoir Anima. \n5. Note: This is a direct purchase once the reputation is met; no Protoform Synthesis required.",
-   ["author"] = "AI",
-   ["difficulty"] = 4, -- Challenging (The Exalted grind is long)
+    ["name"] = "Heartlight Vombata",
+    ["tips"] = "Heartlight Vombata. \n\n1. Source: Achievement 'The Enlightened'. \n2. Requirement: Reach 'Exalted' reputation with The Enlightened faction in Zereth Mortis. \n3. How-to: Purchase the 'Heartlight Vombata' from Vilo (The Enlightened Quartermaster) at /way 34.8 64.2 in Haven. \n4. Cost: 5,000 Reservoir Anima. ",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 4,
+    ["expansion"] = 8,
+
+
 },
 {
    ["mountID"] = 1523,
-   ["name"] = "Curious Crystalsniffer (Vombata)",
-   ["tips"] = "Curious Crystalsniffer (Vombata). \n\n1. Schematic: Inside Sepulcher of the First Ones raid. After killing Halondrus, go to the North part of the second room (The Genesis Foundations). It’s on the ground next to a bush and a large half-buried ZM orb. \n2. Components: 1x Vombata Lattice, 1x Crystallized Echo of the First Song, 400x Genesis Mote. \n3. How-to: Echoes are found at waterfalls on the NE island (/way 77.6 59.0). Lattices drop from any Wombat in the North/Desert area of Zereth Mortis.",
-   ["author"] = "AI",
-   ["difficulty"] = 2, -- Easy (Solo raid for schematic)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Curious Crystalsniffer",
+    ["tips"] = "Curious Crystalsniffer\n\n1. Schematic: Inside Sepulcher of the First Ones raid. After killing Halondrus, go to the North part of the second room (The Genesis Foundations). It’s on the ground next to a bush and a large half-buried ZM orb. \n2. Components: 1x Vombata Lattice, 1x Crystallized Echo of the First Song, 400x Genesis Mote. \n3. How-to: Echoes are found at waterfalls on the NE island (/way 77.6 59.0). Lattices drop from any Wombat in the North/Desert area of Zereth Mortis.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1524,
-   ["name"] = "Darkened Vombata",
-   ["tips"] = "Darkened Vombata. \n\n1. Schematic: In a hanging cage at /way 64.2 35.7 (Arrangement Index). Use a rock nearby to jump or fly up to it. \n2. Rare Material: 1x 'Mawforged Bridle'. \n3. How-to: Dropped by 'Taskmaster Xy'pro' in the Sepulcher raid area. You must kill him while he has 3+ stacks of 'Synergy' (keep 3 Broker adds alive near him) to get the 'Security Override' buff/key for the chest. \n4. Components: 1x Vombata Lattice, 450x Genesis Mote.",
-   ["author"] = "AI",
-   ["difficulty"] = 4, -- Challenging (Raid mechanic for material)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Darkened Vombata",
+    ["tips"] = "Darkened Vombata. \n\n1. Schematic: In a hanging cage at /way 64.2 35.7 (Arrangement Index). Use a rock nearby to jump or fly up to it. \n2. Rare Material: 1x 'Mawforged Bridle'. \n3. How-to: Dropped by 'Taskmaster Xy'pro' in the Sepulcher raid area. You must kill him while he has 3+ stacks of 'Synergy' (keep 3 Broker adds alive near him) to get the 'Security Override' buff/key for the chest. \n4. Components: 1x Vombata Lattice, 450x Genesis Mote.",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1525,
-   ["name"] = "Adorned Vombata",
-   ["tips"] = "Adorned Vombata. \n\n1. Schematic: Inside the 'Grateful Boon' treasure at /way 37.2 78.3 (top of the mountain). \n2. Puzzle: You must 'Pet' (interact with) 5x Agitated Vombata, 4x Agitated Cervid, and 3x Agitated Lupine in the area. Once done, Tah Fen spawns the chest. \n3. Rare Material: 1x 'Lens of Focused Intention'. Purchased from the Enlightened Quartermaster (Revered). \n4. Components: 1x Vombata Lattice, 450x Genesis Mote.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Puzzle/Reputation gate)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Adorned Vombata",
+    ["tips"] = "Adorned Vombata. \n\n1. Schematic: Inside the 'Grateful Boon' treasure at /way 37.2 78.3 (top of the mountain). \n2. Puzzle: You must 'Pet' (interact with) 5x Agitated Vombata, 4x Agitated Cervid, and 3x Agitated Lupine in the area. Once done, Tah Fen spawns the chest. \n3. Rare Material: 1x 'Lens of Focused Intention'. Purchased from the Enlightened Quartermaster (Revered). \n4. Components: 1x Vombata Lattice, 450x Genesis Mote.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1526,
-   ["name"] = "Deathrunner",
-   ["tips"] = "Deathrunner. \n\n1. Source: Protoform Synthesis (Zereth Mortis). \n2. Schematic: Reward for the quest 'Finding Tahli'. This quest appears automatically once you unlock the Protoform Synthesis system. \n3. Components: 1x Cervid Lattice, 1x Tools of Incomprehensible Experimentation, 450x Genesis Mote. \n4. Tip: The 'Tools' drop from Lihuvim in the Sepulcher raid or can be found in Olea Caches.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Very Easy (Tutorial mount)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Deathrunner",
+    ["tips"] = "Deathrunner. \n\n1. Source: Protoform Synthesis (Zereth Mortis). \n2. Schematic: Reward for the quest 'Finding Tahli'. This quest appears automatically once you unlock the Protoform Synthesis system. \n3. Components: 1x Cervid Lattice, 1x Tools of Incomprehensible Experimentation, 450x Genesis Mote. \n4. Tip: The 'Tools' drop from Lihuvim in the Sepulcher raid or can be found in Olea Caches.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1528,
-   ["name"] = "Sundered Zerethsteed",
-   ["tips"] = "Sundered Zerethsteed. \n\n1. Source: Protoform Synthesis (Zereth Mortis). \n2. Schematic: Found at /way 60.5 30.5 (Arrangement Index). It's sitting on a small console in the corner of the platform. \n3. Rare Material: 1x 'Mawforged Bridle'. Best farm is the 'Security Override' chest in the Sepulcher raid area. \n4. Components: 1x Cervid Lattice, 300x Genesis Mote. \n5. Note: This is one of the three mounts that shares the Mawforged Bridle limit.",
-   ["author"] = "AI",
-   ["difficulty"] = 4, -- Challenging (Rare bridle drop)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Sundered Zerethsteed",
+    ["tips"] = "Sundered Zerethsteed. \n\n1. Source: Protoform Synthesis (Zereth Mortis). \n2. Schematic: Found at /way 60.5 30.5 (Arrangement Index). It's sitting on a small console in the corner of the platform. \n3. Rare Material: 1x 'Mawforged Bridle'. Best farm is the 'Security Override' chest in the Sepulcher raid area. \n4. Components: 1x Cervid Lattice, 300x Genesis Mote. \n5. Note: This is one of the three mounts that shares the Mawforged Bridle limit.",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1529,
-   ["name"] = "Anointed Protostag",
-   ["tips"] = "Anointed Protostag. \n\n1. Source: Purchased from Vilo (The Enlightened Quartermaster) at /way 34.8 64.2 in Haven. \n2. Cost: 5,000 Reservoir Anima. \n3. Requirement: Must be 'Revered' with The Enlightened. \n4. Note: This is a direct purchase, not a Protoform Synthesis craft.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Reputation grind)
+    ["name"] = "Anointed Protostag",
+    ["tips"] = "Anointed Protostag. \n\n1. Source: Purchased from Vilo (The Enlightened Quartermaster) at /way 34.8 64.2 in Haven. \n2. Cost: 5,000 Reservoir Anima. \n3. Requirement: Must be 'Revered' with The Enlightened. ",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 4,
+    ["expansion"] = 8,
+
+
 },
 {
    ["mountID"] = 1531,
@@ -9916,112 +9964,134 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1533,
-   ["name"] = "Forged Spiteflyer",
-   ["tips"] = "Forged Spiteflyer. \n\n1. Schematic: Inside a hive at /way 53.3 25.8 (The Droning Precipice). It is sticking out of a small hole in the side of a 'hanging' honeycomb structure—look for a glowing scroll. \n2. Rare Material: 'Eternal Ragepearl'. Best farm is the Elite Mawsworn Automa on the Antecedent Isle (North island). \n3. Components: 1x Vespoid Lattice, 1x Eternal Ragepearl, 450x Genesis Mote. \n4. Strategy: Vespoid Lattices drop from any wasp-type mob in the area. Rare mobs like 'Zatojin' (/way 43.8 32.0) have a significantly higher drop rate.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Schematic can be hard to spot in the hive)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Forged Spiteflyer",
+    ["tips"] = "Forged Spiteflyer. \n\n1. Schematic: Inside a hive at /way 53.3 25.8 (The Droning Precipice). It is sticking out of a small hole in the side of a 'hanging' honeycomb structure—look for a glowing scroll. \n2. Rare Material: 'Eternal Ragepearl'. Best farm is the Elite Mawsworn Automa on the Antecedent Isle (North island). \n3. Components: 1x Vespoid Lattice, 1x Eternal Ragepearl, 450x Genesis Mote. \n4. Strategy: Vespoid Lattices drop from any wasp-type mob in the area. Rare mobs like 'Zatojin' (/way 43.8 32.0) have a significantly higher drop rate.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1534,
-   ["name"] = "Buzz",
-   ["tips"] = "Buzz. \n\n1. Schematic: Contained in 'Pulp-Covered Relics'. These are small orange nests found near trees/pillars in the Endless Sands (NE) or Droning Precipice (SE). \n2. Material: 1x Protoform Sentience Crown. Drops from Elite Automa in the desert (NE) or purchased from the Olea Cache. \n3. Components: 1x Vespoid Lattice, 500x Genesis Mote. \n4. Note: This mount has a unique yellow/black 'classic bee' vibe compared to the other wasps.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (RNG for schematic/crown)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Buzz",
+    ["tips"] = "Buzz. \n\n1. Schematic: Contained in 'Pulp-Covered Relics'. These are small orange nests found near trees/pillars in the Endless Sands (NE) or Droning Precipice (SE). \n2. Material: 1x Protoform Sentience Crown. Drops from Elite Automa in the desert (NE) or purchased from the Olea Cache. \n3. Components: 1x Vespoid Lattice, 500x Genesis Mote. \n4. Note: This mount has a unique yellow/black 'classic bee' vibe compared to the other wasps.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1535,
-   ["name"] = "Bronzewing Vespoid",
-   ["tips"] = "Bronzewing Vespoid. \n\n1. Schematic: In the Gravid Repose (/way 50.5 32.0). Head up the ramp inside the structure; it's sitting on the floor at the very top. \n2. Material: 1x Unalloyed Bronze Ingot. Found inside the 'Repertory Alcove' (Requires Locus Shift research). \n3. Components: 1x Vespoid Lattice, 400x Genesis Mote. \n4. Tip: The Ingot is located at /way 49.6 31.0 inside the Terrestrial Cache room on the left wall.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Requires specific Cypher research)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Bronzewing Vespoid",
+    ["tips"] = "Bronzewing Vespoid. \n\n1. Schematic: In the Gravid Repose (/way 50.5 32.0). Head up the ramp inside the structure; it's sitting on the floor at the very top. \n2. Material: 1x Unalloyed Bronze Ingot. Found inside the 'Repertory Alcove' (Requires Locus Shift research). \n3. Components: 1x Vespoid Lattice, 400x Genesis Mote. \n4. Tip: The Ingot is located at /way 49.6 31.0 inside the Terrestrial Cache room on the left wall.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1536,
-   ["name"] = "Mawdapted Raptora",
-   ["tips"] = "Mawdapted Raptora. \n\n1. Schematic: Inside Sepulcher of the First Ones (Raid). After killing Halondrus, look near the massive half-buried orb at the north of the room; it's on the ground by a plant. \n2. Material: 1x Mawforged Bridle. Rare drop from Mawsworn in ZM or from the 'Security Override' chest in the raid. \n3. Components: 1x Raptora Lattice, 350x Genesis Mote. \n4. Note: This uses the 'Mawsworn' armor model. The Bridle is also used for the Sundered Zerethsteed and Darkened Vombata.",
-   ["author"] = "AI",
-   ["difficulty"] = 4, -- Challenging (Bridle drop rate is low)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Mawdapted Raptora",
+    ["tips"] = "Mawdapted Raptora. \n\n1. Schematic: Inside Sepulcher of the First Ones (Raid). After killing Halondrus, look near the massive half-buried orb at the north of the room; it's on the ground by a plant. \n2. Material: 1x Mawforged Bridle. Rare drop from Mawsworn in ZM or from the 'Security Override' chest in the raid. \n3. Components: 1x Raptora Lattice, 350x Genesis Mote. \n4. Note: This uses the 'Mawsworn' armor model. The Bridle is also used for the Sundered Zerethsteed and Darkened Vombata.",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1537,
-   ["name"] = "Raptora Swooper",
-   ["tips"] = "Raptora Swooper. \n\n1. Schematic: Inside the 'Chamber of Shaping'. Entrance is at /way 65.8 35.9. Run to the very back room; it's sitting on a shelf behind the large central forge. \n2. Components: 1x Raptora Lattice, 1x Eternal Ragepearl, 400x Genesis Mote. \n3. Rare Material: 'Eternal Ragepearl'. Drops from any 'Rage' type elite mobs on the Antecedent Isle (far North island). \n4. Tip: Kill 'Garudeon' (/way 68.6 37.0) for a high chance at the Raptora Lattice.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Requires trekking to the Antecedent Isle)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Raptora Swooper",
+    ["tips"] = "Raptora Swooper. \n\n1. Schematic: Inside the 'Chamber of Shaping'. Entrance is at /way 65.8 35.9. Run to the very back room; it's sitting on a shelf behind the large central forge. \n2. Components: 1x Raptora Lattice, 1x Eternal Ragepearl, 400x Genesis Mote. \n3. Rare Material: 'Eternal Ragepearl'. Drops from any 'Rage' type elite mobs on the Antecedent Isle (far North island). \n4. Tip: Kill 'Garudeon' (/way 68.6 37.0) for a high chance at the Raptora Lattice.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1538,
-   ["name"] = "Bronze Helicid",
-   ["tips"] = "Bronze Helicid. \n\n1. Schematic: Chance to be inside the 'Tribute of the Enlightened Elders' (The reward from the 'Patterns Within Patterns' weekly quest). \n2. Material: 1x Unalloyed Bronze Ingot. Found in the 'Repertory Alcove' (Requires Locus Shift research). \n3. How-to: Ingot is at /way 49.6 31.0 inside the Terrestrial Cache room. \n4. Components: 1x Helicid Lattice, 400x Genesis Mote. \n5. Note: This is purely a luck-based schematic from the weekly quest!",
-   ["author"] = "AI",
-   ["difficulty"] = 4, -- Challenging (Weekly RNG)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Bronze Helicid",
+    ["tips"] = "Bronze Helicid. \n\n1. Schematic: Chance to be inside the 'Tribute of the Enlightened Elders' (The reward from the 'Patterns Within Patterns' weekly quest). \n2. Material: 1x Unalloyed Bronze Ingot. Found in the 'Repertory Alcove' (Requires Locus Shift research). \n3. How-to: Ingot is at /way 49.6 31.0 inside the Terrestrial Cache room. \n4. Components: 1x Helicid Lattice, 400x Genesis Mote. \n5. Note: This is purely a luck-based schematic from the weekly quest!",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 
 {
    ["mountID"] = 1539,
-   ["name"] = "Unsuccessful Prototype Fleetpod",
-   ["tips"] = "Unsuccessful Prototype Fleetpod. \n\n1. Schematic: Inside the 'Camber Alcove'. Unlock via Locus Shift at /way 50.6 32.1 (Gravid Repose). \n2. Mini-game: You must complete a 'Snail Race' inside the alcove to spawn the chest. \n3. Material: 1x Tools of Incomprehensible Experimentation. Drops from 'Lihuvim' in Sepulcher Raid (Soloable). \n4. Quirk: This mount ONLY moves at 100% ground speed regardless of your riding skill. It is literally a slow snail!",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Requires specific Cypher research)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Unsuccessful Prototype Fleetpod",
+    ["tips"] = "Unsuccessful Prototype Fleetpod. \n\n1. Schematic: Inside the 'Camber Alcove'. Unlock via Locus Shift at /way 50.6 32.1 (Gravid Repose). \n2. Mini-game: You must complete a 'Snail Race' inside the alcove to spawn the chest. \n3. Material: 1x Tools of Incomprehensible Experimentation. Drops from 'Lihuvim' in Sepulcher Raid (Soloable). \n4. Quirk: This mount ONLY moves at 100% ground speed regardless of your riding skill. It is literally a slow snail!",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 
 {
    ["mountID"] = 1540,
-   ["name"] = "Scarlet Helicid",
-   ["tips"] = "Scarlet Helicid. \n\n1. Schematic: On the Antecedent Isle (World Boss island). It's way up on the big archway at /way 47.7 9.7. You can walk up the left slope to reach it. \n2. Material: 1x Revelation Key. Drops from the 'Protector of the First Ones' (/way 39.8 27.2). \n3. Barrier: If the cave is blocked, die outside and ghost-walk through the barrier. \n4. Components: 1x Helicid Lattice, 350x Genesis Mote.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Key farm/Ghost walk trick)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Scarlet Helicid",
+    ["tips"] = "Scarlet Helicid. \n\n1. Schematic: On the Antecedent Isle (World Boss island). It's way up on the big archway at /way 47.7 9.7. You can walk up the left slope to reach it. \n2. Material: 1x Revelation Key. Drops from the 'Protector of the First Ones' (/way 39.8 27.2). \n3. Barrier: If the cave is blocked, die outside and ghost-walk through the barrier. \n4. Components: 1x Helicid Lattice, 350x Genesis Mote.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 
 {
    ["mountID"] = 1541,
-   ["name"] = "Genesis Crawler",
-   ["tips"] = "Genesis Crawler. \n\n1. Schematic: At /way 31.5 50.3. It is hidden on the roof of the triangular building in the Endless Sands. \n2. Material: 1x Bauble of Pure Innovation. Found inside 'Exile's Hollow' cave at /way 34.5 49.7. \n3. Components: 1x Tarachnid Lattice, 400x Genesis Mote. \n4. Tip: This is the 'clean' version of the spider mount compared to the Mawsworn ones.",
-   ["author"] = "AI",
-   ["difficulty"] = 2, -- Easy (Just a long walk)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Genesis Crawler",
+    ["tips"] = "Genesis Crawler. \n\n1. Schematic: At /way 31.5 50.3. It is hidden on the roof of the triangular building in the Endless Sands. \n2. Material: 1x Bauble of Pure Innovation. Found inside 'Exile's Hollow' cave at /way 34.5 49.7. \n3. Components: 1x Tarachnid Lattice, 400x Genesis Mote. \n4. Tip: This is the 'clean' version of the spider mount compared to the Mawsworn ones.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1542,
-   ["name"] = "Tarachnid Creeper",
-   ["tips"] = "Tarachnid Creeper. \n\n1. Schematic: Inside 'Exile's Hollow'. Go to /way 34.8 49.3 and enter the cave. The schematic is sitting on top of a high rock pillar inside—you’ll need to use the 'Teleport' cypher power or a targeted jump. \n2. Components: 1x Tarachnid Lattice, 1x Revelation Key, 450x Genesis Mote. \n3. Rare Material: 'Revelation Key'. Drops from Enlightened Chests or the rare 'Mother Phestis' (/way 55.2 33.6). \n4. Tip: The Lattice drops from any spider in the cave at /way 56.1 32.5.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Key farm can take time)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Tarachnid Creeper",
+    ["tips"] = "Tarachnid Creeper. \n\n1. Schematic: Inside 'Exile's Hollow'. Go to /way 34.8 49.3 and enter the cave. The schematic is sitting on top of a high rock pillar inside—you’ll need to use the 'Teleport' cypher power or a targeted jump. \n2. Components: 1x Tarachnid Lattice, 1x Revelation Key, 450x Genesis Mote. \n3. Rare Material: 'Revelation Key'. Drops from Enlightened Chests or the rare 'Mother Phestis' (/way 55.2 33.6). \n4. Tip: The Lattice drops from any spider in the cave at /way 56.1 32.5.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1543,
-   ["name"] = "Ineffable Skitterer",
-   ["tips"] = "Ineffable Skitterer. \n\n1. Schematic: Inside a small cave at /way 62.1 22.0 (Endless Sands). It is guarded by a neutral spider—talk to it, and it will give you the schematic if you 'promise to leave it alone'. \n2. Material: 1x Protoform Sentience Crown. Drops from Elite Automa in the desert or purchased from the Olea Cache. \n3. Components: 1x Tarachnid Lattice, 500x Genesis Mote. \n4. Strategy: This is the most 'friendly' spider mount to get—no combat required for the schematic itself!",
-   ["author"] = "AI",
-   ["difficulty"] = 2, -- Easy (Just a conversation)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Ineffable Skitterer",
+    ["tips"] = "Ineffable Skitterer. \n\n1. Schematic: Inside a small cave at /way 62.1 22.0 (Endless Sands). It is guarded by a neutral spider—talk to it, and it will give you the schematic if you 'promise to leave it alone'. \n2. Material: 1x Protoform Sentience Crown. Drops from Elite Automa in the desert or purchased from the Olea Cache. \n3. Components: 1x Tarachnid Lattice, 500x Genesis Mote. \n4. Strategy: This is the most 'friendly' spider mount to get—no combat required for the schematic itself!",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1544,
     ["name"] = "Wastewarped Deathwalker",
-    ["tips"] = "Wastewarped Deathwalker. \n\n1. Source: Achievement 'Shadowlands Keystone Master: Season 3'. \n2. Current Status: No longer obtainable via the achievement. \n3. Legacy: In 2026, check the Black Market Auction House (BMAH) as some seasonal KSM mounts have begun appearing there. \n4. Note: This is the red/black 'Deathwalker' model from the Zereth Mortis dungeon season.",
+    ["tips"] = "Wastewarped Deathwalker. \n\n1. Source: Achievement 'Shadowlands Keystone Master: Season 3'. \n2. Current Status: No longer obtainable via the achievement. \n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
     ["author"] = "AI",
-    ["difficulty"] = 5,
+    ["difficulty"] = 3,
     ["category"] = 12,
     ["expansion"] = -1,
     ["subcategory"] = 17,
@@ -10048,12 +10118,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1547,
-   ["name"] = "Goldplate Bufonid",
-   ["tips"] = "Goldplate Bufonid. \n\n1. Schematic: Dropped by 'Accelerated Bufonid' elites. Best farm is /way 51.0 74.3 (near the waterfalls) or the elite island to the Northeast. \n2. Material: 1x Bauble of Pure Innovation. Guaranteed purchase from the Enlightened Quartermaster (Revered) or found in 'Exile's Hollow'. \n3. Components: 1x Bufonid Lattice, 400x Genesis Mote. \n4. Note: This is the shiny golden version of the Zereth Mortis frog.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Reputation or Luck)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Goldplate Bufonid",
+    ["tips"] = "Goldplate Bufonid. \n\n1. Schematic: Dropped by 'Accelerated Bufonid' elites. Best farm is /way 51.0 74.3 (near the waterfalls) or the elite island to the Northeast. \n2. Material: 1x Bauble of Pure Innovation. Guaranteed purchase from the Enlightened Quartermaster (Revered) or found in 'Exile's Hollow'. \n3. Components: 1x Bufonid Lattice, 400x Genesis Mote. \n4. Note: This is the shiny golden version of the Zereth Mortis frog.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 {
    ["mountID"] = 1549,
@@ -10169,32 +10241,36 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1569,
-   ["name"] = "Patient Bufonid",
-   ["tips"] = "Patient Bufonid. \n\n1. Source: 7-Day Quest Chain. \n2. How-to: Talk to Avna (/way 34.3 65.9) in Haven. You must complete 'The Burrowed Bufonid' quest 7 times (one per day). \n3. Daily Needs: Vespoid Honey, Tenebrous Ribs (30), Shrouded Cloth (200), Elysian Thade (10), Protoflesh (5), Apple Pie (5), and finally 1x Organic Melon from the Tazavesh dungeon entrance vendor. \n4. Note: Since it's a quest reward, it requires zero Genesis Motes or Lattices.",
-   ["author"] = "AI",
-   ["difficulty"] = 2, -- Easy (Just takes 7 days)
-   ["category"] = 5,
-   ["expansion"] = 8,
+    ["name"] = "Patient Bufonid",
+    ["tips"] = "Patient Bufonid. \n\n1. Source: 7-Day Quest Chain. \n2. How-to: Talk to Avna (/way 34.3 65.9) in Haven. You must complete 'The Burrowed Bufonid' quest 7 times (one per day). \n3. Daily Needs: Vespoid Honey, Tenebrous Ribs (30), Shrouded Cloth (200), Elysian Thade (10), Protoflesh (5), Apple Pie (5), and finally 1x Organic Melon from the Tazavesh dungeon entrance vendor. ",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 5,
+    ["expansion"] = 8,
 },
 
 {
    ["mountID"] = 1570,
-   ["name"] = "Prototype Leaper",
-   ["tips"] = "Prototype Leaper. \n\n1. Schematic: High on a mountain at /way 67.0 69.4 (Untamed Verdure). Best reached by flying or using 'Door of Shadows'. \n2. Requirement: Historically, the 'Frog'it!' World Quest had to be active to see this, but in 2026 it is generally lootable if you have flying. \n3. Material: 1x 'Tools of Incomprehensible Experimentation'. Drops from Lihuvim in the Sepulcher raid. \n4. Components: 1x Bufonid Lattice, 350x Genesis Mote.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Raid material/climbing)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Prototype Leaper",
+    ["tips"] = "Prototype Leaper. \n\n1. Schematic: High on a mountain at /way 67.0 69.4 (Untamed Verdure). Best reached by flying or using 'Door of Shadows'. \n2. Requirement: Historically, the 'Frog'it!' World Quest had to be active to see this, but in 2026 it is generally lootable if you have flying. \n3. Material: 1x 'Tools of Incomprehensible Experimentation'. Drops from Lihuvim in the Sepulcher raid. \n4. Components: 1x Bufonid Lattice, 350x Genesis Mote.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 
 {
    ["mountID"] = 1571,
-   ["name"] = "Russet Bufonid",
-   ["tips"] = "Russet Bufonid. \n\n1. Schematic: RNG Drop from 'Enlightened Broker Supplies' (The Paragon Cache). \n2. Requirement: You must reach Exalted with The Enlightened and then earn another 10,000 reputation to get a cache. \n3. Material: 1x 'Lens of Focused Intention'. Purchased from the Enlightened Quartermaster (Revered). \n4. Components: 1x Bufonid Lattice, 350x Genesis Mote. \n5. Strategy: This is the hardest frog to get due to the Paragon RNG.",
-   ["author"] = "AI",
-   ["difficulty"] = 5, -- Very Hard (Paragon RNG)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Russet Bufonid",
+    ["tips"] = "Russet Bufonid. \n\n1. Schematic: RNG Drop from 'Enlightened Broker Supplies' (The Paragon Cache). \n2. Requirement: You must reach Exalted with The Enlightened and then earn another 10,000 reputation to get a cache. \n3. Material: 1x 'Lens of Focused Intention'. Purchased from the Enlightened Quartermaster (Revered). \n4. Components: 1x Bufonid Lattice, 350x Genesis Mote. \n5. Strategy: This is the hardest frog to get due to the Paragon RNG.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 
 {
@@ -10277,12 +10353,14 @@ MountMasterDB = {
 
 {
    ["mountID"] = 1580,
-   ["name"] = "Heartbond Lupine",
-   ["tips"] = "Heartbond Lupine. \n\n1. Schematic: Dropped by 'Maw-Frenzied Lupine' at /way 52.8 63.6 (inside the Choral Residue cave). Entrance is at /way 51.8 62.7. \n2. Rare Material: 'Crystallized Echo of the First Song'. Found as a physical object near waterfalls on the Sepulcher island (Northeast). \n3. Echo Waypoints: Check behind/inside waterfalls at /way 77.6 59.0, /way 77.5 60.4, or /way 77.4 45.3. \n4. Note: This is the ONLY Lupine mount that flies. Best Genesis Mote farm is /way 61.6 59.0 (The Devourers).",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (Requires parkour/flying for Echoes)
-   ["category"] = 9,
-   ["expansion"] = 8,
+    ["name"] = "Heartbond Lupine",
+    ["tips"] = "Heartbond Lupine. \n\n1. Schematic: Dropped by 'Maw-Frenzied Lupine' at /way 52.8 63.6 (inside the Choral Residue cave). Entrance is at /way 51.8 62.7. \n2. Rare Material: 'Crystallized Echo of the First Song'. Found as a physical object near waterfalls on the Sepulcher island (Northeast). \n3. Echo Waypoints: Check behind/inside waterfalls at /way 77.6 59.0, /way 77.5 60.4, or /way 77.4 45.3. \n4. Note: This is the ONLY Lupine mount that flies. Best Genesis Mote farm is /way 61.6 59.0 (The Devourers).",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 9,
+    ["expansion"] = 8,
+    ["subcategory"] = 64,
+
 },
 
 
@@ -10824,12 +10902,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1681,
-   ["name"] = "Hailstorm Armoredon",
-   ["tips"] = "Hailstorm Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 1. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 1.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 11,
-   ["expansion"] = 9,
+    ["name"] = "Hailstorm Armoredon",
+    ["tips"] = "Hailstorm Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 1. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 1683,
@@ -10935,12 +11015,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1725,
-   ["name"] = "Inferno Armoredon",
-   ["tips"] = "Inferno Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 2. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 2.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 11,
-   ["expansion"] = 9,
+    ["name"] = "Inferno Armoredon",
+    ["tips"] = "Inferno Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 2. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 1727,
@@ -11302,12 +11384,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 1801,
-   ["name"] = "Verdant Armoredon",
-   ["tips"] = "Verdant Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 3. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 3.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 11,
-   ["expansion"] = 9,
+    ["name"] = "Verdant Armoredon",
+    ["tips"] = "Verdant Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 3. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 1808,
@@ -12033,12 +12117,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2055,
-   ["name"] = "Infinite Armoredon",
-   ["tips"] = "Infinite Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 4. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 4.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 11,
-   ["expansion"] = 9,
+    ["name"] = "Infinite Armoredon",
+    ["tips"] = "Infinite Armoredon. \n\n1. Achievement: Dragonflight Keystone Master: Season 4. \n2. Requirement: Earn a Mythic+ Rating of at least 2000 during Season 3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 2056,
@@ -12407,11 +12493,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2612,
-   ["name"] = "Azure Void Flyer",
-   ["tips"] = "Azure Void Flyer. \n\n1. Status: NO LONGER OBTAINABLE. \n2. Source: Achievement 'The War Within Keystone Master: Season Three'. \n3. Note: This season ended on January 20th, 2026. This mount is now retired.",
-   ["author"] = "AI",
-   ["difficulty"] = 0,
-   ["category"] = 12, -- Mythic+
+    ["name"] = "Void-Forged Overseer",
+    ["tips"] = "Void-Forged Overseer\n\n1. Source: Unavailable, possible China promotion mount",
+    ["author"] = "Dev",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["expansion"] = -1,
+
+
 },
 {
    ["mountID"] = 2614,
@@ -12589,12 +12678,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2631,
-   ["name"] = "Scarlet Void Flyer",
-   ["tips"] = "Scarlet Void Flyer. \n\n1. Source: Trading Post purchase.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 11,
-   ["expansion"] = 10,
+    ["name"] = "Scarlet Void Flyer",
+    ["tips"] = "Scarlet Void Flyer\n\n1. Source: Achievement 'The War Within Keystone Legend: Season Three'. \n2. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "Dev",
+    ["difficulty"] = 4,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 62,
+
 },
 {
    ["mountID"] = 2632,
@@ -12609,12 +12700,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2633,
-   ["name"] = "Azure Void Flyer",
-   ["tips"] = "Azure Void Flyer. \n\n1. Source: Trading Post purchase.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 11,
-   ["expansion"] = 10,
+    ["name"] = "Azure Void Flyer",
+    ["tips"] = "Azure Void Flyer. \n\n1. Source: Achievement 'The War Within Keystone Master: Season Three'. \n2. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 {
    ["mountID"] = 2634,
@@ -12696,10 +12789,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2144,
-   ["name"] = "Delver's Dirigible",
-   ["tips"] = "Delver's Dirigible. \n\n1. Source: Reward from the quest 'Ship It!' given by Brann Bronzebeard in Dornogal. \n2. Requirement: Reach Level 80 and complete the 'Bountiful Delves' introduction. \n3. Note: This is the primary customizable mount for TWW. Schematics are found in Delves or bought from Sir Finley Mrrgglton.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Breeze (Intro quest)
+    ["name"] = "Delver's Dirigible",
+    ["tips"] = "Delver's Dirigible. \n\n1. Source: Reward from the quest 'Ship It!' given by Brann Bronzebeard in Dornogal. \n2. Requirement: Reach Level 80 and complete the 'Bountiful Delves' introduction. \n3. Note: This is the primary customizable mount for TWW. Schematics are found in Delves or bought from Sir Finley Mrrgglton.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 5,
+    ["expansion"] = 10,
+
+
 },
 {
    ["mountID"] = 2145,
@@ -12712,10 +12809,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2148,
-   ["name"] = "Smoldering Cinderbee",
-   ["tips"] = "Smoldering Cinderbee. \n\n1. Vendor: Auditor Balwurz (/way 39.0 24.2, Dornogal). \n2. Requirement: Renown Rank 23 with Council of Dornogal. \n3. Cost: 11,375 Resonance Crystals. \n4. Note: This is the first of the Cinderbee models available through Renown; it supports Skyriding.",
-   ["author"] = "AI",
-   ["difficulty"] = 3, -- Medium (High Renown requirement)
+    ["name"] = "Smoldering Cinderbee",
+    ["tips"] = "Smoldering Cinderbee. \n\n1. Vendor: Auditor Balwurz (/way 39.0 24.2, Dornogal). \n2. Requirement: Renown Rank 23 with Council of Dornogal. \n3. Cost: 11,375 Resonance Crystals. \n4. Note: This is the first of the Cinderbee models available through Renown; it supports Skyriding.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 4,
+    ["expansion"] = 10,
+
+
 },
 {
    ["mountID"] = 2660,
@@ -13498,12 +13599,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2244,
-   ["name"] = "Diamond Mechsuit",
-   ["tips"] = "Diamond Mechsuit. \n\n1. Achievement: Special Meta-Achievement in The War Within.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 2,
-   ["expansion"] = 10,
+    ["name"] = "Diamond Mechsuit",
+    ["tips"] = "Diamond Mechsuit.\n\n1. Source: Achievement 'The War Within Keystone Master: Season One'. \n2. Requirement: 2000+ Mythic+ rating during the active window of Season 1. Retired once Season 2 commenced.\n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+
 },
 
 {
@@ -13597,12 +13700,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2274,
-   ["name"] = "Blackwater Bonecrusher",
-   ["tips"] = "Blackwater Bonecrusher. \n\n1. Source: 'Blackwater's Trove' from the Blackwater Cartel. \n2. Requirement: Reach Exalted with the Blackwater Cartel to unlock the cartel's Paragon-style reputation rewards, then keep earning reputation to receive additional Blackwater's Troves. The mount has a chance to be inside these troves. \n3. Note: This is not a guaranteed Exalted reward. Reaching Exalted only unlocks the Paragon/Trove stage; you then need to continue earning reputation for additional troves and rely on RNG for the mount. The mount is therefore a considerably longer farm than the direct cartel vendor mounts.",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 4, -- Reputation
-   ["expansion"] = 10, -- The War Within
+    ["name"] = "Blackwater Bonecrusher",
+    ["tips"] = "Blackwater Bonecrusher. \n\n1. Source: 'Blackwater's Trove' from the Blackwater Cartel. \n2. Requirement: Reach Exalted with the Blackwater Cartel to unlock the cartel's Paragon-style reputation rewards, then keep earning reputation to receive additional Blackwater's Troves. The mount has a chance to be inside these troves. \n3. Note: This is not a guaranteed Exalted reward. Reaching Exalted only unlocks the Paragon/Trove stage; you then need to continue earning reputation for additional troves and rely on RNG for the mount. The mount is therefore a considerably longer farm than the direct cartel vendor mounts.",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 4,
+    ["expansion"] = 10,
+    ["subcategory"] = 60,
+
 },
 {
    ["mountID"] = 2786,
@@ -13666,12 +13771,14 @@ MountMasterDB = {
 
 {
    ["mountID"] = 2281,
-   ["name"] = "Steamwheedle Supplier",
-   ["author"] = "AI",
-   ["tips"] = "Steamwheedle Supplier. \n\n1. Source: Steamwheedle Trove, the Steamwheedle Cartel Paragon reward. \n2. Requirement: Reach Exalted with the Steamwheedle Cartel, then continue earning reputation to receive Steamwheedle Troves. The mount has a chance to be inside each trove. \n3. Note: You need another 10,000 Steamwheedle reputation after reaching Exalted to earn each additional trove. There is no guaranteed mount per trove, so this becomes a repeatable RNG farm. Keep an eye on your Steamwheedle reputation bar and continue doing the cartel's activities after Exalted.",
-   ["difficulty"] = 4,
-   ["category"] = 4, -- Reputation
-   ["expansion"] = 10, -- The War Within
+    ["name"] = "Steamwheedle Supplier",
+    ["author"] = "AI",
+    ["tips"] = "Steamwheedle Supplier. \n\n1. Source: Steamwheedle Trove, the Steamwheedle Cartel Paragon reward. \n2. Requirement: Reach Exalted with the Steamwheedle Cartel, then continue earning reputation to receive Steamwheedle Troves. The mount has a chance to be inside each trove. \n3. Note: You need another 10,000 Steamwheedle reputation after reaching Exalted to earn each additional trove. There is no guaranteed mount per trove, so this becomes a repeatable RNG farm. Keep an eye on your Steamwheedle reputation bar and continue doing the cartel's activities after Exalted.",
+    ["difficulty"] = 4,
+    ["category"] = 4,
+    ["expansion"] = 10,
+    ["subcategory"] = 60,
+
 },
 
 {
@@ -13713,7 +13820,7 @@ MountMasterDB = {
    ["mountID"] = 2796,
     ["name"] = "Bronze Aquilon",
     ["author"] = "AI",
-    ["tips"] = "Bronze Aquilon. \n\n1. Source: Shadowlands Timewalking vendor Collector Ta'steld in Oribos. \n2. Method: Purchase the Bronze Aquilon Harness for 5,000 Timewarped Badges while the Shadowlands Timewalking event is active. \n3. Note: The original acquisition was tied to 'Master of the Turbulent Timeways IV",
+    ["tips"] = "Bronze Aquilon. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Purchased for 5,000 Timewarped Badges from the Timewalking vendor during any timewalking period.\n3. Legacy: Awarded from the 'Master of the Turbulent Timeways IV' achievement",
 --   [ which awarded a Mount Voucher for one of the four bronze Shadowlands mounts. The other mounts could then be bought for 5,000 Timewarped Badges each. The mounts were subsequently made directly purchasable from the Timewalking vendor during the 2026 event. Collector Ta'steld is at /way #1670 64.2 68.0 in Oribos. The Shadowlands Timewalking rotation is required, so stockpile Timewarped Badges ahead of time if this mount is not currently available.",
     ["difficulty"] = 2,
     ["category"] = 13,
@@ -13890,44 +13997,64 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2304,
-   ["name"] = "Chaos-Forged Gryphon",
-   ["tips"] = "Chaos-Forged Gryphon. \n\n1. Source: In-Game Shop / Promotion. \n2. Method: Distributed via promotional bundles or digital store offerings. \n3. Note: A corrupted, chaos-infused gryphon variant.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Blizzard Store
+    ["name"] = "Chaos-Forged Gryphon",
+    ["tips"] = "Chaos-Forged Gryphon. \n\n1. Source: In-Game Shop. \n2. Method: Warcraft 30th Anniversary Mount Bundle (30$).\n3. Note: Comes with 4 Chaos-Forged mounts.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["subcategory"] = 20,
+    ["expansion"] = -1,
+
+
 },
 {
    ["mountID"] = 2305,
-   ["name"] = "Chaos-Forged Hippogryph",
-   ["tips"] = "Chaos-Forged Hippogryph. \n\n1. Source: In-Game Shop / Promotion. \n2. Method: Distributed via promotional bundles or digital store offerings. \n3. Note: A corrupted, chaos-infused hippogryph variant.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Blizzard Store
+    ["name"] = "Chaos-Forged Hippogryph",
+    ["tips"] = "Chaos-Forged Hippogryph.\n\n1. Source: In-Game Shop. \n2. Method: Warcraft 30th Anniversary Mount Bundle (30$).\n3. Note: Comes with 4 Chaos-Forged mounts.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["subcategory"] = 20,
+    ["expansion"] = -1,
+
+
 },
 
 {
    ["mountID"] = 2307,
-   ["name"] = "Chaos-Forged Dreadwing",
-   ["tips"] = "Chaos-Forged Dreadwing. \n\n1. Source: In-Game Shop / Promotion. \n2. Method: Distributed via promotional bundles or digital store offerings. \n3. Note: A corrupted, chaos-infused dreadwing variant.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Blizzard Store
+    ["name"] = "Chaos-Forged Dreadwing",
+    ["tips"] = "Chaos-Forged Dreadwing. \n\n1. Source: In-Game Shop. \n2. Method: Warcraft 30th Anniversary Mount Bundle (30$).\n3. Note: Comes with 4 Chaos-Forged mounts.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2308,
-   ["name"] = "Chaos-Forged Wind Rider",
-   ["tips"] = "Chaos-Forged Wind Rider. \n\n1. Source: In-Game Shop / Promotion. \n2. Method: Distributed via promotional bundles or digital store offerings. \n3. Note: A corrupted, chaos-infused wyvern (Wind Rider) variant.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Blizzard Store
+    ["name"] = "Chaos-Forged Wind Rider",
+    ["tips"] = "Chaos-Forged Wind Rider. \n\n1. Source: In-Game Shop. \n2. Method: Warcraft 30th Anniversary Mount Bundle (30$).\n3. Note: Comes with 4 Chaos-Forged mounts.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2823,
-   ["name"] = "Savage Crimson Battle Turtle",
-   ["tips"] = "Savage Crimson Battle Turtle. \n\n1. Source: The Trading Post (January 2026). \n2. Cost: 500 Trader's Tender. \n3. Note: A heavily armored, red-shelled turtle variant.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Savage Crimson Battle Turtle",
+    ["tips"] = "Savage Crimson Battle Turtle. \n\n1. Source: The Trading Post (January 2026). \n2. Cost: 500 Trader's Tender. \n3. Note: A heavily armored, red-shelled turtle variant.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2313,
@@ -13951,11 +14078,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2315,
-   ["name"] = "Timbered Sky Snake",
-   ["tips"] = "Timbered Sky Snake. \n\n1. Source: Blizzard Shop / Subscription Promotion (January 2025). \n2. Method: Originally awarded for 6-month or 12-month recurring subscription bundles or standalone purchase. \n3. Note: An elegant, arboreal-themed cloud serpent that utilizes dynamic skyriding mechanics.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Shop
+    ["name"] = "Timbered Sky Snake",
+    ["tips"] = "Timbered Sky Snake. \n\n1. Source: Blizzard Shop / Subscription Promotion (January 2025). \n2. Method: Originally awarded for 6-month or 12-month recurring subscription bundles or standalone purchase. \n3. Note: An elegant, arboreal-themed cloud serpent that utilizes dynamic skyriding mechanics.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 
 {
@@ -13969,21 +14100,29 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2317,
-   ["name"] = "Enchanted Spellweave Carpet",
-   ["tips"] = "Enchanted Spellweave Carpet. \n\n1. Source: Timewalking Vendor (Wrath of the Lich King). \n2. Cost: 5,000 Timewarped Badges. \n3. Method: Purchase from Auzin in Old Dalaran during active WotLK Timewalking weeks. \n4. Note: A magical carpet mount that has been updated for full Skyriding support.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- World Event
+    ["name"] = "Enchanted Spellweave Carpet",
+    ["tips"] = "Enchanted Spellweave Carpet. \n\n1. Source: Timewalking Vendor (Wrath of the Lich King). \n2. Cost: 5,000 Timewarped Badges. \n3. Method: Purchase from Auzin in Old Dalaran during active WotLK Timewalking weeks. \n4. Note: A magical carpet mount that has been updated for full Skyriding support.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
    
 },
 
 {
    ["mountID"] = 2321,
-   ["name"] = "Timely Buzzbee",
-   ["tips"] = "Timely Buzzbee. \n\n1. Source: Achievement 'Master of the Turbulent Timeways II'. \n2. Method: Complete the meta-achievement during the Turbulent Timeways global event. \n3. Note: A temporal-infused bee mount with glowing bronze accents.",
-   ["author"] = "AI",
-   ["difficulty"] = 3,
-   ["category"] = 13, -- World Event
+    ["name"] = "Timely Buzzbee",
+    ["tips"] = "Timely Buzzbee. \n\n1. Source: Timewalking Vendor\n2. Method: Purchased for 5,000 Timewarped Badges from the Timewalking vendor during any timewalking period.\n3. Legacy: Awarded from the 'Master of the Turbulent Timeways IV' achievement",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
    
 },
 {
@@ -13997,12 +14136,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2834,
-   ["name"] = "Cabbage Pseudoshell",
-   ["tips"] = "Cabbage Pseudoshell. \n\n1. Source: Unreleased / Datamined Asset. \n2. Status: Currently unavailable. Model exists in the build as a test-bed asset but currently lacks a vendor or drop source.",
-   ["author"] = "AI",
-   ["difficulty"] = 5,
-   ["category"] = 0, -- Not In Game
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Cabbage Pseudoshell",
+    ["tips"] = "Cabbage Pseudoshell. \n\n1. Source: Unreleased / Datamined Asset. \n2. Status: Currently unavailable. Model exists in the build as a test-bed asset but currently lacks a vendor or drop source.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 
 },
 {
@@ -14020,12 +14161,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2836,
-   ["name"] = "Accented Pseudoshell",
-   ["tips"] = "Accented Pseudoshell. \n\n1. Source: Unreleased / Datamined Asset. \n2. Status: Currently unavailable. This model is a higher-fidelity variant of the Pseudoshell line and is awaiting scheduled content implementation.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 0, -- Not In Game
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Accented Pseudoshell",
+    ["tips"] = "Accented Pseudoshell. \n\n1. Source: Unreleased / Datamined Asset. \n2. Status: Currently unavailable. This model is a higher-fidelity variant of the Pseudoshell line and is awaiting scheduled content implementation.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 
 },
 {
@@ -14044,43 +14187,63 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2327,
-   ["name"] = "Lunar Launcher",
-   ["tips"] = "Lunar Launcher. \n\n1. Source: Lunar Festival (Annual World Event). \n2. Cost: 500 Ornate Lunar Coins (Event Currency). \n3. Note: A sleek, fireworks-integrated mechanical launch platform mount.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- World Event
+    ["name"] = "Lunar Launcher",
+    ["tips"] = "Lunar Launcher. \n\n1. Source: Lunar Festival (Annual World Event). \n2. Cost: 500 Ornate Lunar Coins (Event Currency). \n3. Note: A sleek, fireworks-integrated mechanical launch platform mount.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 6,
+
+
 },
 {
    ["mountID"] = 2328,
-   ["name"] = "Love Witch's Sweeper",
-   ["tips"] = "Love Witch's Sweeper. \n\n1. Source: The Trading Post (February Rotation). \n2. Cost: 600 Trader's Tender. \n3. Note: A heart-themed, enchanted broom mount variant.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Love Witch's Sweeper",
+    ["tips"] = "Love Witch's Sweeper. \n\n1. Source: Heart-Shaped Box (added in 2025)\n2. Note: The New event drops can only drop on your first attempt of the day (WoW account-wide), and will see an increasing chance to drop with each new day that a first attempt is completed\n3. Tip: You can create and use trial accounts under same battle net account to gain extra \"First of the day\" chances.",
+    ["author"] = "Dev",
+    ["difficulty"] = 3,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 3,
+
+
 },
 {
    ["mountID"] = 2329,
-   ["name"] = "Silvermoon Sweeper",
-   ["tips"] = "Silvermoon Sweeper. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A majestic broom mount featuring elegant Sin'dorei silk and gold ornamentation.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Silvermoon Sweeper",
+    ["tips"] = "Silvermoon Sweeper. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A majestic broom mount featuring elegant Sin'dorei silk and gold ornamentation.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2330,
-   ["name"] = "Twilight Witch's Sweeper",
-   ["tips"] = "Twilight Witch's Sweeper. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A mystical, void-infused broom mount variant with trailing purple arcane particles.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Twilight Witch's Sweeper",
+    ["tips"] = "Twilight Witch's Sweeper. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A mystical, void-infused broom mount variant with trailing purple arcane particles.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2331,
-   ["name"] = "Sky Witch's Sweeper",
-   ["tips"] = "Sky Witch's Sweeper. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A lightweight, cloud-themed broom mount design that excels in dynamic flight maneuvers.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Sky Witch's Sweeper",
+    ["tips"] = "Sky Witch's Sweeper. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A lightweight, cloud-themed broom mount design that excels in dynamic flight maneuvers.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2332,
@@ -14102,19 +14265,29 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2334,
-   ["name"] = "Bronze Goblin Waveshredder",
-   ["tips"] = "Bronze Goblin Waveshredder. \n\n1. Source: Timewalking Vendor (Cataclysm / Kezan). \n2. Cost: 5,000 Timewarped Badges. \n3. Note: A polished, bronze-plated mechanical watercraft variant. Fully supports Skyriding.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- World Event
+    ["name"] = "Bronze Goblin Waveshredder",
+    ["tips"] = "Bronze Goblin Waveshredder. \n\n1. Source: Darkfuse Trove (Darkfuse Cartel paragon box)\n2. Requires: Exalted with Darkfuse Solutions (Undermine)\n3. Method: Farm Market Research in the Undermine and purchase Box of Darkfuse Miscellany from Sitch Lowdown. [button=\"/way #2346 30.6 38.8 Sitch Lowdown\"].\nEach 100 research awards 500 reputation (unbuffed)",
+    ["author"] = "Dev",
+    ["difficulty"] = 3,
+    ["category"] = 4,
+    ["expansion"] = 10,
+    ["subcategory"] = 60,
+
+
 },
 {
    ["mountID"] = 2846,
-   ["name"] = "Ferocious Snapvine",
-   ["tips"] = "Ferocious Snapvine. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A fierce, predatory plant ground mount capable of dynamic skyriding flight. Features a vibrant, deep jungle coloration.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Ferocious Snapvine",
+    ["tips"] = "Ferocious Snapvine. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A fierce, predatory plant ground mount capable of dynamic skyriding flight. Features a vibrant, deep jungle coloration.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["subcategory"] = 12,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 2847,
@@ -14130,20 +14303,28 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2848,
-   ["name"] = "Savage Snapvine",
-   ["tips"] = "Savage Snapvine. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A lush, thorn-covered carnivorous vine mount asset. A primary featured offering within the spring-themed garden rotations.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Savage Snapvine",
+    ["tips"] = "Savage Snapvine. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 600 Trader's Tender. \n3. Note: A lush, thorn-covered carnivorous vine mount asset. A primary featured offering within the spring-themed garden rotations.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+    ["subcategory"] = 12,
+
+
+
 },
 {
    ["mountID"] = 2849,
-   ["name"] = "Hypo-Speed X6000",
-   ["tips"] = "Hypo-Speed X6000. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The client files contain this high-fidelity, high-speed modern goblin mechanical vehicle mount, but it has not yet been given a live acquisition source.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 0, -- Not In Game
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Hypo-Speed X6000",
+    ["tips"] = "Hypo-Speed X6000. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The client files contain this high-fidelity, high-speed modern goblin mechanical vehicle mount, but it has not yet been given a live acquisition source.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 
 },
 {
@@ -14157,153 +14338,221 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2851,
-   ["name"] = "Gruffy Comfy Flying Quilt",
-   ["tips"] = "Gruffy Comfy Flying Quilt. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 550 Trader's Tender. \n3. Note: A stylized, thick-stitched enchanted flying carpet variant that flies using dynamic skyriding mechanics.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Gruffy Comfy Flying Quilt",
+    ["tips"] = "Gruffy Comfy Flying Quilt. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 550 Trader's Tender. \n3. Note: A stylized, thick-stitched enchanted flying carpet variant that flies using dynamic skyriding mechanics.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+    ["subcategory"] = 12,
+
+
+
 },
 {
    ["mountID"] = 2852,
-   ["name"] = "Comfy Bel'ameth Flying Quilt",
-   ["tips"] = "Comfy Bel'ameth Flying Quilt. \n\n1. Source: The Trading Post (March 2026 / Season 38). \n2. Method: Earned automatically as the monthly bonus reward for filling the Traveler's Log progress bar to 1,000 points. \n3. Note: A blue-and-purple enchanted flying quilt hand-woven by Ainderu Summerleaf, showcasing Kaldorei design patterns.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Comfy Bel'ameth Flying Quilt",
+    ["tips"] = "Comfy Bel'ameth Flying Quilt. \n\n1. Source: The Trading Post (March 2026 / Season 38). \n2. Method: Earned automatically as the monthly bonus reward for filling the Traveler's Log progress bar to 1,000 points. \n3. Note: A blue-and-purple enchanted flying quilt hand-woven by Ainderu Summerleaf, showcasing Kaldorei design patterns.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2342,
-   ["name"] = "Meeksi Rufflefur",
-   ["tips"] = "Meeksi Rufflefur. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique blue-furred tea bear mount that shifts between ground running and dynamic flying scales.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Shop
+    ["name"] = "Meeksi Rufflefur",
+    ["tips"] = "Meeksi Rufflefur. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique blue-furred tea bear mount that shifts between ground running and dynamic flying scales.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2343,
-   ["name"] = "Meeksi Softpaw",
-   ["tips"] = "Meeksi Softpaw. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique gray-furred tea bear mount that shifts between ground running and dynamic flying scales.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Shop
+    ["name"] = "Meeksi Softpaw",
+    ["tips"] = "Meeksi Softpaw. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique gray-furred tea bear mount that shifts between ground running and dynamic flying scales.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2344,
-   ["name"] = "Meeksi Rollingpaw",
-   ["tips"] = "Meeksi Rollingpaw. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique orange-furred tea bear mount that shifts between ground running and dynamic flying scales.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Shop
+    ["name"] = "Meeksi Rollingpaw",
+    ["tips"] = "Meeksi Rollingpaw. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique orange-furred tea bear mount that shifts between ground running and dynamic flying scales.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2345,
-   ["name"] = "Meeksi Teatuft",
-   ["tips"] = "Meeksi Teatuft. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique red-furred tea bear mount that shifts between ground running and dynamic flying scales.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Shop
+    ["name"] = "Meeksi Teatuft",
+    ["tips"] = "Meeksi Teatuft. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique red-furred tea bear mount that shifts between ground running and dynamic flying scales.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2346,
-   ["name"] = "Meeksi Brewthief",
-   ["tips"] = "Meeksi Brewthief. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique purple-furred tea bear mount that shifts between ground running and dynamic flying scales.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Shop
+    ["name"] = "Meeksi Brewthief",
+    ["tips"] = "Meeksi Brewthief. \n\n1. Source: In-Game Shop / Battle.net Store. \n2. Method: Purchased individually or as part of the 'Marvelous Meeksi Collection' bundle. \n3. Note: A unique purple-furred tea bear mount that shifts between ground running and dynamic flying scales.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2347,
-   ["name"] = "Savage Alabaster Battle Turtle",
-   ["tips"] = "Savage Alabaster Battle Turtle. \n\n1. Source: The Trading Post (January 2025 / Patch 11.0.7). \n2. Cost: 500 Trader's Tender. \n3. Note: A heavily armored white-shelled turtle mount rigged with dual-mounted shoulder cannons on its shell plates.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14,
+    ["name"] = "Savage Alabaster Battle Turtle",
+    ["tips"] = "Savage Alabaster Battle Turtle. \n\n1. Source: The Trading Post (January 2025 / Patch 11.0.7). \n2. Cost: 500 Trader's Tender. \n3. Note: A heavily armored white-shelled turtle mount rigged with dual-mounted shoulder cannons on its shell plates.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2798,
-   ["name"] = "Bronze Gravewing",
-   ["tips"] = "Bronze Gravewing. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Awarded from the 'Master of the Turbulent Timeways IV' event chain, or purchased for 5,000 Timewarped Badges from Overseer Ta'readon in Oribos during Shadowlands Timewalking. \n3. Note: A Bronze-tinted Revendreth Stoneborn model.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- World Event
+    ["name"] = "Bronze Gravewing",
+    ["tips"] = "Bronze Gravewing. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Purchased for 5,000 Timewarped Badges from the Timewalking vendor during any timewalking period.\n3. Legacy: Awarded from the 'Master of the Turbulent Timeways IV' achievement",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 2797,
-   ["name"] = "Bronze Corpsefly",
-   ["tips"] = "Bronze Corpsefly. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Awarded from the 'Master of the Turbulent Timeways IV' event chain, or purchased for 5,000 Timewarped Badges from the Timewalking vendor during active Shadowlands Timewalking blocks. \n3. Note: A Bronze-tinted Maldraxxus skeletal fly model.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- World Event
+    ["name"] = "Bronze Corpsefly",
+    ["tips"] = "Bronze Corpsefly. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Purchased for 5,000 Timewarped Badges from the Timewalking vendor during any timewalking period.\n3. Legacy: Awarded from the 'Master of the Turbulent Timeways IV' achievement",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 2795,
-   ["name"] = "Bronze Wilderling",
-   ["tips"] = "Bronze Wilderling. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Awarded from the 'Master of the Turbulent Timeways IV' event chain, or purchased for 5,000 Timewarped Badges from the Timewalking vendor during active Shadowlands Timewalking blocks. \n3. Note: A Bronze-tinted Ardenweald dragon-fox model.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- World Event
+    ["name"] = "Bronze Wilderling",
+    ["tips"] = "Bronze Wilderling. \n\n1. Source: Timewalking Vendor / Meta-Event. \n2. Method: Purchased for 5,000 Timewarped Badges from the Timewalking vendor during any timewalking period.\n3. Legacy: Awarded from the 'Master of the Turbulent Timeways IV' achievement",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
    
 },
 {
    ["mountID"] = 2743,
-   ["name"] = "Stormgilded Celestial",
-   ["tips"] = "Stormgilded Celestial. \n\n1. Source: Region Exclusive Promotion (China Region). \n2. Status: Unobtainable for global clients. This lightning-infused celestial mount was exclusively distributed via the NetEase 'New Year's Fortune Box' promotional event and has no active acquisition path on Western servers.",
-   ["author"] = "AI",
-   ["difficulty"] = 5,
-   ["category"] = 0,
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Stormgilded Celestial",
+    ["tips"] = "Stormgilded Celestial. \n\n1. Source: Region Exclusive Promotion (China Region). \n2. Status: Unobtainable for global clients. This lightning-infused celestial mount was exclusively distributed via the NetEase 'New Year's Fortune Box' promotional event and has no active acquisition path on Western servers.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 
 },
 {
    ["mountID"] = 2838,
-   ["name"] = "Fantastical Goblin Waveshredder",
-   ["tips"] = "Fantastical Goblin Waveshredder. \n\n1. Source: Fanta x Xbox External Crossover Promotion. \n2. Method: Redeemable via the official promotional mobile portal by scanning QR codes on participating products and linking your Battle.net account. \n3. Note: A custom Fanta-themed mechanical watercraft mount featuring full Skyriding capabilities. Also rewards player housing decor assets.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Promotional
+    ["name"] = "Fantastical Goblin Waveshredder",
+    ["tips"] = "Fantastical Goblin Waveshredder. \n\n1. Source: Fanta x Xbox External Crossover Promotion. \n2. Method: Redeemable via the official promotional mobile portal by scanning QR codes on participating products and linking your Battle.net account. \n3. Note: A custom Fanta-themed mechanical watercraft mount featuring full Skyriding capabilities. Also rewards player housing decor assets.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 
 {
    ["mountID"] = 2843,
-   ["name"] = "Ghastropod",
-   ["tips"] = "Ghastropod. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and unique dark snail mount shell model exist within the game files but it has not yet been given a live acquisition source.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 0, -- Not In Game
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Ghastropod",
+    ["tips"] = "Ghastropod. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and unique dark snail mount shell model exist within the game files but it has not yet been given a live acquisition source.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 },
 {
    ["mountID"] = 2853,
-   ["name"] = "Comfy Silvermoon Flying Quilt",
-   ["tips"] = "Comfy Silvermoon Flying Quilt. \n\n1. Source: The Trading Post (March 2026 / Season 38). \n2. Cost: 550 Trader's Tender. \n3. Note: An enchanted flying carpet style mount sporting the iconic red-and-silver colors of the blood elf capital.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Comfy Silvermoon Flying Quilt",
+    ["tips"] = "Comfy Silvermoon Flying Quilt. \n\n1. Source: The Trading Post (March 2026 / Season 38). \n2. Cost: 550 Trader's Tender. \n3. Note: An enchanted flying carpet style mount sporting the iconic red-and-silver colors of the blood elf capital.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2850,
-   ["name"] = "Fluffy Comfy Flying Quilt",
-   ["tips"] = "Fluffy Comfy Flying Quilt. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 550 Trader's Tender. \n3. Note: A variant of the magical flying carpet quilt mount model featuring plush cushioning structures.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Fluffy Comfy Flying Quilt",
+    ["tips"] = "Fluffy Comfy Flying Quilt. \n\n1. Source: Watching 8 hours of BlizzCon 2026 stream on twitch or youtube with a linked account",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+
+
 },
 {
    ["mountID"] = 2845,
-   ["name"] = "Vicious Snapvine",
-   ["tips"] = "Vicious Snapvine. \n\n1. Source: The Trading Post (April 2026 / Season 39). \n2. Cost: 600 Trader's Tender. \n3. Note: A strange plant-mimicking ground mount capable of dynamic flight, native to deep overgrown forest thickets.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Vicious Snapvine",
+    ["tips"] = "Vicious Snapvine. \n\n1. Source: The Trading Post (April 2026 / Season 39). \n2. Cost: 600 Trader's Tender. \n3. Note: A strange plant-mimicking ground mount capable of dynamic flight, native to deep overgrown forest thickets.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2914,
-   ["name"] = "Fel Spirehawk",
-   ["tips"] = "Fel Spirehawk. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and model files (a Fel-tinged version of the Violet Spellwing skeleton) were created during data structures setup but the mount has not yet been assigned a live acquisition source.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 0, -- Not In Game
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Fel Spirehawk",
+    ["tips"] = "Fel Spirehawk. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and model files (a Fel-tinged version of the Violet Spellwing skeleton) were created during data structures setup but the mount has not yet been assigned a live acquisition source.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 
 },
 {
@@ -14318,12 +14567,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2835,
-   ["name"] = "Lavender Pseudoshell",
-   ["tips"] = "Lavender Pseudoshell. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and spell ID exist within the client databases but the mount has not yet been assigned a live acquisition source.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 0, -- Not In Game
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Lavender Pseudoshell",
+    ["tips"] = "Lavender Pseudoshell. \n\n1. Source: Unreleased / Datamined File Asset. \n2. Status: Currently unavailable. The item data and spell ID exist within the client databases but the mount has not yet been assigned a live acquisition source.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 
 },
 {
@@ -14432,19 +14683,31 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2734,
-   ["name"] = "Convalescent Carrion",
-   ["tips"] = "Convalescent Carrion. \n\n1. Source: Achievement 'Midnight Keystone Legend: Season One'. \n2. Method: Achieve a Mythic+ Rating of 3000 in Midnight Season 1. \n3. Note: Seasonal-limited; becomes unobtainable when Season 2 begins.",
-   ["author"] = "AI",
-   ["difficulty"] = 5,
-   ["category"] = 12, -- Mythic+
+    ["name"] = "Convalescent Carrion",
+    ["tips"] = "Convalescent Carrion. \n\n1. Source: Achievement 'Midnight Keystone Legend: Season One'. \n2. Method: Achieve a Mythic+ Rating of 3000 in Midnight Season 1. \n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 62,
+    ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 2733,
-   ["name"] = "Calamitous Carrion",
-   ["tips"] = "Calamitous Carrion. \n\n1. Source: Achievement 'Midnight Keystone Master: Season One'. \n2. Method: Reach a 2,000+ Mythic+ Rating during Season 1. \n3. Note: Seasonal mount. Once Season 1 concludes, this mount will become unobtainable.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 12,
+    ["name"] = "Calamitous Carrion",
+    ["tips"] = "Calamitous Carrion. \n\n1. Source: Achievement 'Midnight Keystone Master: Season One'. \n2. Method: Reach a 2,000+ Mythic+ Rating during Season 1. \n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+    ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 2731,
@@ -14564,27 +14827,43 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2699,
-   ["name"] = "Prized Turkey",
-   ["tips"] = "Prized Turkey. \n\n1. Source: The Trading Post (Seasonal Rotational / November). \n2. Cost: 350 Trader's Tender (Estimated). \n3. Note: A unique wild turkey ground mount model added in Patch 11.2.5.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Prized Turkey",
+    ["tips"] = "Prized Turkey. \n\n1. Source: The Trading Post (Seasonal Rotational / November). \n2. Cost: 350 Trader's Tender (Estimated). \n3. Note: A unique wild turkey ground mount model added in Patch 11.2.5.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2698,
-   ["name"] = "Murky Turkey",
-   ["tips"] = "Murky Turkey. \n\n1. Source: The Trading Post (Seasonal Rotational / November). \n2. Cost: 350 Trader's Tender (Estimated). \n3. Note: A colorful teal and purple variant of the wild turkey mount skeleton added in Patch 11.2.5.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Murky Turkey",
+    ["tips"] = "Murky Turkey. \n\n1. Source: The Trading Post (Seasonal Rotational / November). \n2. Cost: 350 Trader's Tender (Estimated). \n3. Note: A colorful teal and purple variant of the wild turkey mount skeleton added in Patch 11.2.5.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+    ["subcategory"] = 12,
+
+
+
 },
 {
    ["mountID"] = 2697,
-   ["name"] = "Quirky Turkey",
-   ["tips"] = "Quirky Turkey. \n\n1. Source: The Trading Post (Seasonal Rotational / November). \n2. Cost: 350 Trader's Tender (Estimated). \n3. Note: A distinct plum/magenta variant of the wild turkey mount skeleton added in Patch 11.2.5.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Quirky Turkey",
+    ["tips"] = "Quirky Turkey. \n\n1. Source: The Trading Post (Seasonal Rotational / November). \n2. Cost: 350 Trader's Tender (Estimated). \n3. Note: A distinct plum/magenta variant of the wild turkey mount skeleton added in Patch 11.2.5.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+    ["subcategory"] = 12,
+
+
+
 },
 {
    ["mountID"] = 2691,
@@ -14753,43 +15032,65 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2651,
-   ["name"] = "Cragstepper Crest-Horn",
-   ["tips"] = "Cragstepper Crest-Horn. \n\n1. Source: Blizzard Store / The Trading Post. \n2. Method: Originally part of the limited-time 'Snowbound Drustvar Pack' promotional bundle. \n3. Note: Ground mount only. Eligible to rotate into the active Trading Post roster in future cycles.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10, -- Blizzard Store
+    ["name"] = "Cragstepper Crest-Horn",
+    ["tips"] = "Cragstepper Crest-Horn. \n\n1. Source: Blizzard Store\n2. Method: Originally part of the limited-time 'Snowbound Drustvar Pack' promotional bundle. \n3. Note: Ground mount only. Eligible to rotate into the active Trading Post roster in future cycles.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2630,
-   ["name"] = "Ornery Breezestrider",
-   ["tips"] = "Ornery Breezestrider. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 325 Trader's Tender. \n3. Status: Temporarily unavailable. Will return to stock in a future monthly cycle rotation.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Ornery Breezestrider",
+    ["tips"] = "Ornery Breezestrider. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 325 Trader's Tender. \n3. Status: Temporarily unavailable. Will return to stock in a future monthly cycle rotation.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2629,
-   ["name"] = "Emberwing Sky Guide",
-   ["tips"] = "Emberwing Sky Guide. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 650 Trader's Tender. \n3. Note: An ornate Wildhammer gryphon model carrying fire-tinged wing particle trails.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Emberwing Sky Guide",
+    ["tips"] = "Emberwing Sky Guide. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 650 Trader's Tender. \n3. Note: An ornate Wildhammer gryphon model carrying fire-tinged wing particle trails.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+    ["subcategory"] = 12,
+
+
+
 },
 {
    ["mountID"] = 2628,
-   ["name"] = "Cinder-Plumed Highland Gryphon",
-   ["tips"] = "Cinder-Plumed Highland Gryphon. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 650 Trader's Tender. \n3. Status: Temporarily unavailable. Will return in a future monthly rotation.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "Cinder-Plumed Highland Gryphon",
+    ["tips"] = "Cinder-Plumed Highland Gryphon. \n\n1. Source: The Trading Post (Seasonal Rotational). \n2. Cost: 650 Trader's Tender. \n3. Status: Temporarily unavailable. Will return in a future monthly rotation.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2627,
-   ["name"] = "High Shaman's Aerie Gryphon",
-   ["tips"] = "High Shaman's Aerie Gryphon. \n\n1. Source: The Trading Post (September Monthly Bonus Reward). \n2. Cost: Free (Earn 1,000 Travel Log points). \n3. Status: Temporarily unavailable. Expected to return for Trader's Tender in a future rotation.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 14, -- Vendor
+    ["name"] = "High Shaman's Aerie Gryphon",
+    ["tips"] = "High Shaman's Aerie Gryphon. \n\n1. Source: The Trading Post (September Monthly Bonus Reward). \n2. Cost: Free (Earn 1,000 Travel Log points). \n3. Status: Temporarily unavailable. Expected to return for Trader's Tender in a future rotation.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2626,
@@ -14803,11 +15104,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2625,
-   ["name"] = "The Headless Horseman's Hallowed Charger",
-   ["tips"] = "The Headless Horseman's Hallowed Charger. \n\n1. Source: Hallow's End World Event. \n2. Drop: Looted from the Loot-Stuffed Pumpkin (Dungeon Finder: The Headless Horseman). \n3. Status: Only obtainable during the annual holiday event.",
-   ["author"] = "AI",
-   ["difficulty"] = 3,
-   ["category"] = 13, -- World Event
+    ["name"] = "The Headless Horseman's Hallowed Charger",
+    ["tips"] = "The Headless Horseman's Hallowed Charger. \n\n1. Source: Hallow's End World Event. \n2. Drop: Looted from the Loot-Stuffed Pumpkin (Dungeon Finder: The Headless Horseman). \n3. Status: Only obtainable during the annual holiday event.",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 2,
+
+
 },
 {
    ["mountID"] = 2064,
@@ -14916,19 +15221,27 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2470,
-   ["name"] = "Nightfall Skyreaver",
-   ["tips"] = "Nightfall Skyreaver. \n\n1. Source: Warlords of Draenor Timewalking. \n2. Vendor: Kronnus (Warspear) / Tempra (Stormshield). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A purple/shadowy armored rylak model. Available only during WoD Timewalking weeks.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- Vendor
+    ["name"] = "Nightfall Skyreaver",
+    ["tips"] = "Nightfall Skyreaver. \n\n1. Source: Warlords of Draenor Timewalking. \n2. Vendor: Kronnus (Warspear) / Tempra (Stormshield). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A purple/shadowy armored rylak model. Available only during WoD Timewalking weeks.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 2471,
-   ["name"] = "Ur'zul Fleshripper",
-   ["tips"] = "Ur'zul Fleshripper. \n\n1. Source: Legion Timewalking. \n2. Vendor: Aridormi (Dalaran - Broken Isles). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A red/fleshy recolor of the Shackled Ur'zul added in Patch 11.0.7.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- TW Vendor
+    ["name"] = "Ur'zul Fleshripper",
+    ["tips"] = "Ur'zul Fleshripper. \n\n1. Source: Legion Timewalking. \n2. Vendor: Aridormi (Dalaran - Broken Isles). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A red/fleshy recolor of the Shackled Ur'zul added in Patch 11.0.7.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 2075,
@@ -14944,19 +15257,27 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2473,
-   ["name"] = "Broodling of Sinestra",
-   ["tips"] = "Broodling of Sinestra. \n\n1. Source: Cataclysm Timewalking. \n2. Vendor: Kiatke (Stormwind / Orgrimmar). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A purple twilight drake model added in Patch 11.0.7.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- TW Vendor
+    ["name"] = "Broodling of Sinestra",
+    ["tips"] = "Broodling of Sinestra. \n\n1. Source: Cataclysm Timewalking. \n2. Vendor: Kiatke (Stormwind / Orgrimmar). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A purple twilight drake model added in Patch 11.0.7.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 2474,
-   ["name"] = "Copper-Maned Quilen",
-   ["tips"] = "Copper-Maned Quilen. \n\n1. Source: Mists of Pandaria Timewalking. \n2. Vendor: Mistweaver Xia (Timeless Isle). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A bronze/stone quilen model added in Patch 11.0.7.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 13, -- TW Vendor
+    ["name"] = "Copper-Maned Quilen",
+    ["tips"] = "Copper-Maned Quilen. \n\n1. Source: Mists of Pandaria Timewalking. \n2. Vendor: Mistweaver Xia (Timeless Isle). \n3. Cost: 5,000 Timewarped Badges. \n4. Note: A bronze/stone quilen model added in Patch 11.0.7.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 13,
+    ["expansion"] = -1,
+    ["subcategory"] = 10,
+
+
 },
 {
    ["mountID"] = 2076,
@@ -14996,12 +15317,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2478,
-   ["name"] = "Blazing Royal Fire Hawk",
-   ["tips"] = "Blazing Royal Fire Hawk. \n\n1. Status: Region Locked / Unobtainable. \n2. Note: Exclusive promotional mount available only on the Mainland China region live servers. Not accessible on Global/Western clients.",
-   ["author"] = "AI",
-   ["difficulty"] = 0,
-   ["category"] = 0, -- Not In Game (For Global Clients)
-   ["unobtainable"] = 1, -- Removed from the game
+    ["name"] = "Blazing Royal Fire Hawk",
+    ["tips"] = "Blazing Royal Fire Hawk. \n\n1. Status: Region Locked / Unobtainable. \n2. Note: Exclusive promotional mount available only on the Mainland China region live servers. Not accessible on Global/Western clients.",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 0,
+    ["unobtainable"] = 1,
+    ["expansion"] = -1,
+
 },
 {
    ["mountID"] = 2084,
@@ -15017,11 +15340,17 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2480,
-   ["name"] = "Crimson Shreddertank",
-   ["tips"] = "Crimson Shreddertank. \n\n1. Status: NO LONGER OBTAINABLE. \n2. Source: Achievement 'The War Within Keystone Master: Season Two'. \n3. Note: Requires a 2000+ Mythic+ rating during the active window of Season 2. Retired once Season 3 commenced.",
-   ["author"] = "AI",
-   ["difficulty"] = 0, -- Closed window
-   ["category"] = 12, -- Mythic+
+    ["name"] = "Crimson Shreddertank",
+    ["tips"] = "Crimson Shreddertank. \n\n1. Source: Achievement 'The War Within Keystone Master: Season Two'. \n2. Requirement: 2000+ Mythic+ rating during the active window of Season 2. Retired once Season 3 commenced.\n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 17,
+    ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 2087,
@@ -15037,35 +15366,55 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2481,
-   ["name"] = "Midnight Darkmoon Charger",
-   ["tips"] = "Midnight Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender. \n3. Note: A dark variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Timegated
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Midnight Darkmoon Charger",
+    ["tips"] = "Midnight Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender. \n3. Note: A dark variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+    ["subcategory"] = 12,
+
+
+
 },
 {
    ["mountID"] = 2482,
-   ["name"] = "Lively Darkmoon Charger",
-   ["tips"] = "Lively Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender. \n3. Note: A colorful variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Timegated
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Lively Darkmoon Charger",
+    ["tips"] = "Lively Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender. \n3. Note: A colorful variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2483,
-   ["name"] = "Violet Darkmoon Charger",
-   ["tips"] = "Violet Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender (Featured April 2025). \n3. Note: A purple variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Timegated
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Violet Darkmoon Charger",
+    ["tips"] = "Violet Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender (Featured April 2025). \n3. Note: A purple variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2484,
-   ["name"] = "Snowy Darkmoon Charger",
-   ["tips"] = "Snowy Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender. \n3. Note: A white variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Timegated
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Snowy Darkmoon Charger",
+    ["tips"] = "Snowy Darkmoon Charger. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 600 Trader's Tender. \n3. Note: A white variant of the Darkmoon Faire horse model. Rotates into the shop inventory periodically.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["subcategory"] = 12,
+    ["expansion"] = -1,
+    ["unobtainable"] = 1,
+
+
+
 },
 {
    ["mountID"] = 2089,
@@ -15102,35 +15451,49 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2488,
-   ["name"] = "Shimmermist Free Runner",
-   ["tips"] = "Shimmermist Free Runner. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 325 Trader's Tender. \n3. Note: Not to be confused with the 'Shimmermist Runner' (Ardenweald puzzle mount). This mount rotates into the Trading Post catalog periodically.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Timegated (Requires Trader's Tender)
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Shimmermist Free Runner",
+    ["tips"] = "Shimmermist Free Runner. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 325 Trader's Tender. \n3. Note: Not to be confused with the 'Shimmermist Runner' (Ardenweald puzzle mount). This mount rotates into the Trading Post catalog periodically.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2489,
-   ["name"] = "Pearlescent Butterfly",
-   ["tips"] = "Pearlescent Butterfly. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 700 Trader's Tender (March 2025). \n3. Tip: Trading Post inventory rotates monthly. If you missed it, you will need to wait for it to rotate back into the catalog.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Timegated (Requires Trader's Tender)
-   ["category"] = 14, -- Limited Time
+    ["name"] = "Pearlescent Butterfly",
+    ["tips"] = "Pearlescent Butterfly. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 700 Trader's Tender (March 2025). \n3. Tip: Trading Post inventory rotates monthly. If you missed it, you will need to wait for it to rotate back into the catalog.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2491,
-   ["name"] = "Ruby Butterfly",
-   ["tips"] = "Ruby Butterfly. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 700 Trader's Tender. \n3. Tip: The Trading Post inventory rotates monthly. If you missed it, you will need to wait for it to rotate back into the catalog.",
-   ["author"] = "AI",
-   ["difficulty"] = 1, -- Trivial/Timegated (Requires Trader's Tender)
-   ["category"] = 14, -- Using standard Trading Post / In-Game Shop category ID
+    ["name"] = "Ruby Butterfly",
+    ["tips"] = "Ruby Butterfly. \n\n1. Source: Purchased from the Trading Post (T&W/Zen'shiri). \n2. Cost: 700 Trader's Tender. \n3. Tip: The Trading Post inventory rotates monthly. If you missed it, you will need to wait for it to rotate back into the catalog.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 14,
+    ["expansion"] = -1,
+    ["subcategory"] = 12,
+
+
 },
 {
    ["mountID"] = 2492,
-   ["name"] = "Spring Butterfly",
-   ["tips"] = "Spring Butterfly. \n\n1. Source: Looted from the 'Heart-Shaped Box'. \n2. Requirement: Defeat the Crown Chemical Co. holiday bosses in Shadowfang Keep during the 'Love is in the Air' festival. \n3. Tip: The box can only drop once per day per eligible high-level character, and the mount has a cumulative drop chance increase for the first kill of the day across your account.",
-   ["author"] = "AI",
-   ["difficulty"] = 4, -- Hard (due to seasonal RNG drop)
-   ["category"] = 13, -- World Event
+    ["name"] = "Spring Butterfly",
+    ["tips"] = "Spring Butterfly. \n\n1. Source: Looted from the 'Heart-Shaped Box'. \n2. Requirement: Defeat the Crown Chemical Co. holiday bosses in Shadowfang Keep during the 'Love is in the Air' festival. \n3. Tip: The box can only drop once per day per eligible high-level character, and the mount has a cumulative drop chance increase for the first kill of the day across your account.",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 13,
+    ["expansion"] = 0,
+
 },
 {
    ["mountID"] = 2494,
@@ -15273,12 +15636,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2508,
-   ["name"] = "Enterprising Shreddertank",
-   ["tips"] = "Enterprising Shreddertank. \n\n1. Source: Reward from 'The War Within Keystone Legend: Season Two'. \n2. Requirement: Reach a Mythic+ Rating of 3000 during the season. \n3. Note: This is the elite version of the Season 2 M+ mount.",
-   ["author"] = "AI",
-   ["difficulty"] = 5,   
-   ["category"] = 12, -- Mythic+
-   ["expansion"] = 10,
+    ["name"] = "Enterprising Shreddertank",
+    ["tips"] = "Enterprising Shreddertank. \n\n1. Source: Reward from 'The War Within Keystone Legend: Season Two'. \n2. Requirement: Reach a Mythic+ Rating of 3000 during the season. \n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "AI",
+    ["difficulty"] = 3,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 62,
+
+
 },
 {
    ["mountID"] = 2510,
@@ -15291,11 +15657,15 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 2566,
-   ["name"] = "Lana'thel's Crimson Cascade",
-   ["tips"] = "Lana'thel's Crimson Cascade. \n\n1. Source: Part of the 'Crimson Court Pack' from the In-Game Shop. \n2. Note: Occasionally rotates onto the Trading Post for roughly 800-900 Tender. Check the monthly rotation at the T&W counter.",
-   ["author"] = "AI",
-   ["difficulty"] = 1,
-   ["category"] = 10,
+    ["name"] = "Lana'thel's Crimson Cascade",
+    ["tips"] = "Lana'thel's Crimson Cascade. \n\n1. Source: Part of the 'Crimson Court Pack' from the In-Game Shop. \n2. Note: Occasionally rotates onto the Trading Post for roughly 800-900 Tender. Check the monthly rotation at the T&W counter.",
+    ["author"] = "AI",
+    ["difficulty"] = 1,
+    ["category"] = 10,
+    ["expansion"] = -1,
+    ["subcategory"] = 20,
+
+
 },
 {
    ["mountID"] = 2567,
@@ -15985,5 +16355,135 @@ MountMasterDB = {
     ["category"] = 3,
     ["subcategory"] = 28,
     ["expansion"] = 11,
+},
+{
+    ["mountID"] = 3029,
+    ["name"] = "Apophic Soul Crusher",
+    ["tips"] = "Apophic Soul Crusher\n\n1. Achievement: Let Me Solo Him: Azta'rec\n2. Method: Solo the Midnight Season 2 delve Nemesis boss on ?? difficulty (Tier 11) [button=\"/way #2512 51.2 31.0 Venomfall Deeps\"]\n3. Tips: Bring Healer Valeera (for dps and tanks) and dps Valeera (for heales)\n4. How To:\nThe boss will reach intermission at 90%, 60% and 30% health, keep this in mind as timings can matter a lot\nNoxious Bile (frontal) leaves stuff on the ground, try position boss towards the edge looking away from the platform\nVoid Toxin (magic dispel) healer Valeera can remove this one\nSoul Extinction (interrupt) if cast goes through it does 2m damage, important!\nVenom Storm (waves) simply dodge them\nSerpent's Strike (Tank only) Tankbuster\n\nIntermission: The boss will show you a pattern of safe spots, then repeat the pattern without visual clues.\nAt 90% hp it does 5 safe spots, at 60% it does 6 safe spots, and at 30% it does 7 safe spots.\nThis will be the main challenge of the boss fight",
+    ["author"] = "Dev",
+    ["difficulty"] = 4,
+    ["category"] = 2,
+    ["expansion"] = 11,
+},
+{
+    ["mountID"] = 3002,
+    ["name"] = "Vicious Lightbloom Boar",
+    ["tips"] = "Vicious Lightbloom Boar\n\n1. Source: Rated Arena and Rated Battleground Season Reward (Midnight: Season 2)\n2. Requirement: Win Rated PvP matches during Midnight Season 2 while at 1000 rating or higher",
+    ["author"] = "Dev",
+    ["difficulty"] = 4,
+    ["category"] = 8,
+    ["subcategory"] = 19,
+    ["expansion"] = 11,
+    ["faction"] = 1,
+
+},
+{
+    ["mountID"] = 3003,
+    ["name"] = "Vicious Lightbloom Boar",
+    ["tips"] = "Vicious Lightbloom Boar\n\n1. Source: Rated Arena and Rated Battleground Season Reward (Midnight: Season 2)\n2. Requirement: Win Rated PvP matches during Midnight Season 2 while at 1000 rating or higher",
+    ["author"] = "Dev",
+    ["difficulty"] = 4,
+    ["category"] = 8,
+    ["subcategory"] = 19,
+    ["expansion"] = 11,
+    ["faction"] = 2,
+
+},
+{
+    ["mountID"] = 3064,
+    ["name"] = "Breath of Ruin",
+    ["tips"] = "Breath of Ruin\n\n1. Source: Midnight Keystone Legend: Season Two\n2. Requirement: Reach a Mythic+ Rating of at least 3000\n3. Note: Time limited mount, ends when Midnight Season 3 comes out.",
+    ["author"] = "Dev",
+    ["difficulty"] = 4,
+    ["category"] = 12,
+    ["expansion"] = 11,
+    ["subcategory"] = 62,
+
+},
+{
+    ["mountID"] = 3063,
+    ["name"] = "Breath of Blight",
+    ["tips"] = "Breath of Blight\n\n1. Source: Midnight Keystone Master: Season Two\n2. Requirement: Mythic+ Rating of 2000 during Midnight Season 2.\n3. Note: Can now be purchase with Timelost Saddle, rewarded from the Current seasons Keystone Myth",
+    ["author"] = "Dev",
+    ["difficulty"] = 4,
+    ["category"] = 12,
+    ["subcategory"] = 17,
+    ["expansion"] = 11,
+},
+{
+    ["mountID"] = 3005,
+    ["name"] = "Cerulean Deathwalker",
+    ["tips"] = "Cerulean Deathwalker\n\n1. Source: Purchasable from Lindormi [button=\"/way #2393 42.2 58.8 Lindormi\"] in Silvermoon\n2. Method: Achieve Keystone Myth in the current season to obtain a Timelost Saddle, the currency for Legacy Keystone Hero and Legend mounts\n3. Note: This is a recolor that was never available previously",
+    ["author"] = "Dev",
+    ["difficulty"] = 5,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 63,
+
+},
+{
+    ["mountID"] = 3006,
+    ["name"] = "Amethyst Mechsuit",
+    ["tips"] = "Amethyst Mechsuit\n\n1. Source: Purchasable from Lindormi [button=\"/way #2393 42.2 58.8 Lindormi\"] in Silvermoon\n2. Method: Achieve Keystone Myth in the current season to obtain a Timelost Saddle, the currency for Legacy Keystone Hero and Legend mounts\n3. Note: This is a recolor that was never available previously",
+    ["author"] = "Dev",
+    ["difficulty"] = 5,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 63,
+
+},
+{
+    ["mountID"] = 3007,
+    ["name"] = "Blue-Chip Shreddertank",
+    ["tips"] = "Blue-Chip Shreddertank\n\n1. Source: Purchasable from Lindormi [button=\"/way #2393 42.2 58.8 Lindormi\"] in Silvermoon\n2. Method: Achieve Keystone Myth in the current season to obtain a Timelost Saddle, the currency for Legacy Keystone Hero and Legend mounts\n3. Note: This is a recolor that was never available previously",
+    ["author"] = "Dev",
+    ["difficulty"] = 5,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 63,
+
+},
+{
+    ["mountID"] = 3008,
+    ["name"] = "Profit-Green Shreddertank",
+    ["tips"] = "Profit-Green Shreddertank\n\n1. Source: Purchasable from Lindormi [button=\"/way #2393 42.2 58.8 Lindormi\"] in Silvermoon\n2. Method: Achieve Keystone Myth in the current season to obtain a Timelost Saddle, the currency for Legacy Keystone Hero and Legend mounts\n3. Note: This is a recolor that was never available previously",
+    ["author"] = "AI",
+    ["difficulty"] = 5,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 63,
+
+},
+{
+    ["mountID"] = 30010,
+    ["name"] = "High-Yield Shreddertank",
+    ["tips"] = "High-Yield Shreddertank\n\n1. Source: Purchasable from Lindormi [button=\"/way #2393 42.2 58.8 Lindormi\"] in Silvermoon\n2. Method: Achieve Keystone Myth in the current season to obtain a Timelost Saddle, the currency for Legacy Keystone Hero and Legend mounts\n3. Note: This is a recolor that was never available previously",
+    ["author"] = "Dev",
+    ["difficulty"] = 5,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 63,
+
+},
+{
+    ["mountID"] = 3009,
+    ["name"] = "Speculative Shreddertank",
+    ["tips"] = "Speculative Shreddertank\n\n1. Source: Purchasable from Lindormi [button=\"/way #2393 42.2 58.8 Lindormi\"] in Silvermoon\n2. Method: Achieve Keystone Myth in the current season to obtain a Timelost Saddle, the currency for Legacy Keystone Hero and Legend mounts\n3. Note: This is a recolor that was never available previously",
+    ["author"] = "Dev",
+    ["difficulty"] = 5,
+    ["category"] = 12,
+    ["expansion"] = -1,
+    ["subcategory"] = 63,
+
+},
+{
+    ["mountID"] = 2652,
+    ["name"] = "Bilebound Ur'zul",
+    ["tips"] = "Bilebound Ur'zul\n\n1. Source: The Trading Post (October 2026). \n2. Cost: 700 Trader's Tender. \n3. Note: Green recolor of the Shackled Ur'zul mount from Mythic Argus the Unmaker.\n\n",
+    ["author"] = "Dev",
+    ["difficulty"] = 2,
+    ["category"] = 14,
+    ["subcategory"] = 12,
+    ["expansion"] = -1,
 },
 }

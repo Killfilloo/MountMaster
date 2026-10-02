@@ -79,6 +79,7 @@ MountMasterLocales.enGB = {
         [48] = "Alchemy", [49] = "Archaeology",  [50] = "Engineering", [51] = "Fishing", [52] = "Jewelcrafting",
         [53] = "Tailoring", [54] = "Leatherworking", [55] = "Blacksmith",
         [56] = "Kurenai/The Mag'har", [57] = "Netherwin", [58] = "Sha'tari Skyguard", [59] = "Argent Tournament", [60] = "Paragon",
+        [62] = "Keystone Legend", [63] = "Keystone Myth", [64] = "Protoform Synthesis", [65] = "Island Expedition",
     }
     
 }

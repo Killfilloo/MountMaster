@@ -71,7 +71,7 @@
 --     53: 'Tailoring', 54: 'Leatherworking', 55: 'Blacksmith', 64: 'Protoform Synthesis',
 --     // Reputations
 --     56: "Kurenai/The Mag'har", 57: 'Netherwing', 58: "Sha'tari Skyguard", 59: 'Argent Tournament', 60: 'Paragon',
---     65: 'Island Expedition',
+--     65: 'Island Expedition', 65: 'World Boss'
 
 
 --  Expansions
@@ -7212,6 +7212,8 @@ MountMasterDB = {
     ["difficulty"] = 3,
     ["category"] = 1,
     ["expansion"] = 7,
+    ["subcategory"] = 65,
+
 },
 {
    ["mountID"] = 1043,
@@ -7725,6 +7727,8 @@ MountMasterDB = {
     ["difficulty"] = 2,
     ["category"] = 1,
     ["expansion"] = 7,
+    ["subcategory"] = 65,
+
 },
 {
    ["mountID"] = 1209,
@@ -8059,6 +8063,8 @@ MountMasterDB = {
     ["difficulty"] = 2,
     ["category"] = 3,
     ["expansion"] = 7,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 1252,
@@ -8480,6 +8486,8 @@ MountMasterDB = {
     ["difficulty"] = 2,
     ["category"] = 3,
     ["expansion"] = 7,
+    ["subcategory"] = 28,
+
 },
 {
    ["mountID"] = 1317,

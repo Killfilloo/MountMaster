@@ -3525,7 +3525,7 @@ MountMasterDB = {
 {
    ["mountID"] = 420,
     ["name"] = "Subdued Seahorse",
-    ["tips"] = "Subdued Seahorse. \n\n1. Drop: Poseidus (Rare World Boss spawn in Vashj'ir). \n2. Note: 100% drop, tradeable on Auction House. Usable in any body of water.",
+    ["tips"] = "Subdued Seahorse. \n\n1. Drop: Poseidus (Rare spawn in Vashj'ir). \n2. Note: 100% drop, tradeable on Auction House. Usable in any body of water.",
     ["author"] = "AI",
     ["difficulty"] = 2,
     ["category"] = 3,
@@ -4045,12 +4045,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 473,
-   ["name"] = "Heavenly Onyx Cloud Serpent",
-   ["tips"] = "Heavenly Onyx Cloud Serpent. Drops from the Sha of Anger (Kun-Lai Summit, /way 54, 64). \n\n1. Drop Rate: Legacy-buffed to ~1%. \n2. Respawn: 15 minutes. \n3. Bonus Roll: Use an 'Elder Charm of Good Fortune' (purchased in Townlong Steppes for Lesser Charms).",
-   ["author"] = "AI",
-   ["difficulty"] = 4,
-   ["category"] = 3,
-   ["expansion"] = 4,
+    ["name"] = "Heavenly Onyx Cloud Serpent",
+    ["tips"] = "Heavenly Onyx Cloud Serpent. \n\n1. Source: Drops from the Sha of Anger (World boss, Kun-Lai Summit). \n2. Drop Rate: Legacy-buffed to ~1%. \n3. Respawn: 15 minutes. \n4. Bonus Roll: Use an 'Elder Charm of Good Fortune' (purchased in Townlong Steppes for Lesser Charms).",
+    ["author"] = "AI",
+    ["difficulty"] = 4,
+    ["category"] = 3,
+    ["expansion"] = 4,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 474,
@@ -4394,6 +4396,8 @@ MountMasterDB = {
     ["difficulty"] = 3,
     ["category"] = 3,
     ["expansion"] = 4,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 516,
@@ -4552,6 +4556,8 @@ MountMasterDB = {
     ["difficulty"] = 3,
     ["category"] = 3,
     ["expansion"] = 4,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 534,
@@ -4634,8 +4640,10 @@ MountMasterDB = {
     ["tips"] = "Thundering Cobalt Cloud Serpent. \n\n1. Drop: Nalak (World Boss - Isle of Thunder). \n2. Drop Rate: ~1%.",
     ["author"] = "AI",
     ["difficulty"] = 3,
-    ["category"] = 4,
+    ["category"] = 3,
     ["expansion"] = 4,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 543,
@@ -5175,6 +5183,8 @@ MountMasterDB = {
     ["difficulty"] = 4,
     ["category"] = 3,
     ["expansion"] = 5,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 635,
@@ -5849,12 +5859,14 @@ MountMasterDB = {
 },
 {
    ["mountID"] = 838,
-   ["name"] = "Fathom Dweller",
-   ["tips"] = "Fathom Dweller. \n\n1. Drop: Kosumoth the Hungering (World Boss - Eye of Azshara). \n2. Requirement: Complete the hidden Hungry Orb puzzle around the Broken Isles to unlock the world quest reward.",
-   ["author"] = "AI",
-   ["difficulty"] = 2,
-   ["category"] = 3,
-   ["expansion"] = 6,
+    ["name"] = "Fathom Dweller",
+    ["tips"] = "Fathom Dweller. \n\n1. Drop: Kosumoth the Hungering (World Boss - Eye of Azshara). \n2. Requirement: Complete the hidden Hungry Orb puzzle around the Broken Isles to unlock the world quest reward.",
+    ["author"] = "AI",
+    ["difficulty"] = 2,
+    ["category"] = 3,
+    ["expansion"] = 6,
+    ["subcategory"] = 66,
+
 },
 {
    ["mountID"] = 841,
